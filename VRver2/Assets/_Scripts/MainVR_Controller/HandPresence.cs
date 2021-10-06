@@ -5,35 +5,93 @@ using UnityEngine.XR;
 
 public class HandPresence : MonoBehaviour
 {
-    [SerializeField] GameObject rotateHead;
-    [SerializeField] float rotSpeed;
-    [SerializeField] float nowAngle = 0;
+    public bool useController = false;
+    public List<GameObject> controllerPrefabs;
+    public GameObject handPrefab;
+    public InputDeviceCharacteristics controllerChar;
 
-    InputDevice targetDevice;
-    Vector2 rotate2DValue;
+
+    private InputDevice targetDevice;
+    private GameObject spawnedController;
+    private GameObject spawnedHandModel;
+    private Animator handAnim;
+
 
     private void Start() 
     {
+        TryInitialize();
+    }
+
+    void TryInitialize()
+    {
         List<InputDevice> devices = new List<InputDevice>();
-        InputDeviceCharacteristics rightController = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
-        InputDevices.GetDevicesWithCharacteristics(rightController, devices);
+        InputDevices.GetDevicesWithCharacteristics(controllerChar, devices);
 
         foreach (var item in devices)
         {
             Debug.Log(item.name + item.characteristics);
         }
-        if(devices.Count > 0)
+        if (devices.Count > 0)
         {
             targetDevice = devices[0];
+            GameObject prefab = controllerPrefabs.Find(controller => controller.name == targetDevice.name);
+            if (prefab)
+            {
+                spawnedController = Instantiate(prefab, transform);
+            }
+            else
+            {
+                Debug.LogError("can't find controller prefabs");
+                spawnedController = Instantiate(controllerPrefabs[0], transform);
+            }
+
+            spawnedHandModel = Instantiate(handPrefab, transform);
+            handAnim = spawnedHandModel.GetComponent<Animator>();
+        }  
+    }
+
+    void UpdateHandAnim()
+    {
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
+        {
+            handAnim.SetFloat("Trigger", triggerValue);
+        }
+        else
+        {
+            handAnim.SetFloat("Trigger", 0);
+        }
+
+        if (targetDevice.TryGetFeatureValue(CommonUsages.grip, out float gripValue))
+        {
+            handAnim.SetFloat("Grip", gripValue);
+        }
+        else
+        {
+            handAnim.SetFloat("Grip", 0);
         }
     }
 
     void Update()
     {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out rotate2DValue) && rotate2DValue != Vector2.zero)
+        if (!targetDevice.isValid)
         {
-            nowAngle -= rotate2DValue.x * rotSpeed;
-            rotateHead.transform.localRotation = Quaternion.Euler(nowAngle, 0, 0);
+            TryInitialize();
         }
+        else
+        {
+            if (useController)
+            {
+                spawnedHandModel.SetActive(false);
+                spawnedController.SetActive(true);
+            }
+            else
+            {
+                spawnedHandModel.SetActive(true);
+                spawnedController.SetActive(false);
+                UpdateHandAnim();
+            }
+        }
+
+
     }
 }
