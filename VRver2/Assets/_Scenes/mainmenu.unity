@@ -1163,7 +1163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818023606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.063, y: 0.128, z: 1.821}
+  m_LocalPosition: {x: -1.16, y: 0.128, z: 1.821}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 164757372}
@@ -1779,7 +1779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &927489582
 Light:
   m_ObjectHideFlags: 0
@@ -1978,7 +1978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001171529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.398, y: 0.128, z: 1.782}
+  m_LocalPosition: {x: 1.5730001, y: 0.128, z: 1.782}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 1345799848}
@@ -2212,7 +2212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039018559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.063, y: 0.128, z: 1.375}
+  m_LocalPosition: {x: -1.16, y: 0.128, z: 1.375}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 375979845}
@@ -2470,7 +2470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125687592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.063, y: 0.128, z: 0.948}
+  m_LocalPosition: {x: -1.16, y: 0.128, z: 0.948}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 629716546}
@@ -3208,7 +3208,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307584052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.402, y: 0.128, z: 1.368}
+  m_LocalPosition: {x: 1.569, y: 0.128, z: 1.368}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 417342772}
@@ -4870,6 +4870,7 @@ GameObject:
   - component: {fileID: 1804417415}
   - component: {fileID: 1804417419}
   - component: {fileID: 1804417420}
+  - component: {fileID: 1804417421}
   m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
@@ -4909,7 +4910,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 99d44ce5fc9ad404186abb68494c8782, type: 2}
+  - {fileID: 2100000, guid: d2b9cbb468c51c842a192e53b14e56b9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4947,7 +4948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804417414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.68, y: 0.34999996, z: 1.406}
+  m_LocalPosition: {x: 0.138, y: 0.34999996, z: 0.827}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 927489583}
@@ -5010,7 +5011,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnActivate:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1804417421}
+        m_TargetAssemblyTypeName: ChangeHand, Assembly-CSharp
+        m_MethodName: switchHand
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
@@ -5047,6 +5060,24 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!114 &1804417421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804417414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf76060e4a80b254581a2e0ff1187b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftHandMain: {fileID: 923297128}
+  RightHandMain: {fileID: 1836895619}
+  mainMesh: {fileID: 1804417416}
+  notGlow: {fileID: 2100000, guid: d2b9cbb468c51c842a192e53b14e56b9, type: 2}
+  Glow: {fileID: 2100000, guid: 99d44ce5fc9ad404186abb68494c8782, type: 2}
+  MainLight: {fileID: 927489581}
 --- !u!1 &1836895619
 GameObject:
   m_ObjectHideFlags: 0
@@ -5206,7 +5237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109122552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.398, y: 0.128, z: 0.904}
+  m_LocalPosition: {x: 1.5730001, y: 0.128, z: 0.904}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 1500712999}
