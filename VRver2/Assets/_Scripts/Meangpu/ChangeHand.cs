@@ -39,7 +39,6 @@ public class ChangeHand : MonoBehaviour
         else
         {
             mainMesh.material = notGlow;
-            
         }
         
     }
