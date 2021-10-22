@@ -19,8 +19,8 @@ public class ChangeHand : MonoBehaviour
 
     void setup()
     {
-        leftScpt = LeftHandMain.transform.GetChild(0).GetChild(0).GetComponent<HandPresence>();
-        rightScpt = RightHandMain.transform.GetChild(0).GetChild(0).GetComponent<HandPresence>();
+        leftScpt = LeftHandMain.transform.GetChild(0).GetComponent<HandPresence>();
+        rightScpt = RightHandMain.transform.GetChild(0).GetComponent<HandPresence>();
     }
 
     public void switchHand()
