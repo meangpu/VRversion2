@@ -6,6 +6,7 @@ using UnityEngine.XR;
 public class HandPresence : MonoBehaviour
 {
     public bool useController = false;
+
     public List<GameObject> controllerPrefabs;
     public GameObject handPrefab;
     public InputDeviceCharacteristics controllerChar;
@@ -29,7 +30,7 @@ public class HandPresence : MonoBehaviour
 
         foreach (var item in devices)
         {
-            Debug.Log(item.name + item.characteristics);
+            Debug.Log($"{item.name} / {item.characteristics}");
         }
         if (devices.Count > 0)
         {

@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   useController: 1
   controllerPrefabs:
+  - {fileID: 8291395675744742599, guid: 47e8969134bd314479b1a96414f77e0d, type: 3}
   - {fileID: 7634514334346526944, guid: 0540e32b498ef284f8e1dcf80dfccd58, type: 3}
   - {fileID: 4245457492171364763, guid: c836783e3928a624e9ff9c70d4f21606, type: 3}
   - {fileID: 4024951872544157354, guid: cfa8dc06d611ba340b06bbefba58ee46, type: 3}
@@ -54,5 +55,6 @@ MonoBehaviour:
   - {fileID: 357722411443781339, guid: aafefdd564a300c4d93806fdc271c41f, type: 3}
   - {fileID: 5928091942230486030, guid: c4b9c875ed967534eb12cd57aeeb1183, type: 3}
   - {fileID: 6654152787936889342, guid: 61e60013ce1d7d942b8975c98fdf8154, type: 3}
+  - {fileID: 4309560518391078002, guid: cb3b2eb16299ddf40be625387af422ad, type: 3}
   handPrefab: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
   controllerChar: 576
