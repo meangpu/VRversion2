@@ -288,7 +288,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7448694142545170892, guid: 2106a4c8b7035da4f8d54c75e99d13ba, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7448694142545170892, guid: 2106a4c8b7035da4f8d54c75e99d13ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1091,6 +1091,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2680124198694403133, guid: 8df84126c821987488bfe5fb8d5ac26e, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217232948348992361, guid: 8df84126c821987488bfe5fb8d5ac26e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 592d90076d07e954b833bc5c15edd336, type: 2}
     - target: {fileID: 8915291471594794182, guid: 8df84126c821987488bfe5fb8d5ac26e, type: 3}
       propertyPath: m_Name
       value: PlayerToolsCamera
