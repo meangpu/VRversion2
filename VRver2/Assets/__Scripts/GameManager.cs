@@ -34,8 +34,6 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Losegame:
                 break;
-            default:
-                Debug.Log("case bug");
        }
     }
 
