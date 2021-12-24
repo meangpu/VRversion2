@@ -9,9 +9,38 @@ public class GameManager : MonoBehaviour
     public GameState state;
     private void Awake() 
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
+
+    public void UpdateGameState(GameState newState)
+    {
+        state = newState;
+
+        switch (newState)
+        {
+            case GameState.Mainmenu:
+                break;
+            case GameState.Playing:
+                break;
+            case GameState.Wingame:
+                break;
+            case GameState.Losegame:
+                break;
+            default:
+                Debug.Log("case bug");
+       }
+    }
+
 }
+
 
 
 public enum GameState
