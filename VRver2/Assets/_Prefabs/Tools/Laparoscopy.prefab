@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7955323690537876205}
   - component: {fileID: 5342966452282518151}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: All_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 1743893877195801157}
   - component: {fileID: 7929375902727771433}
   - component: {fileID: 3523987432796960149}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3714169805852631878}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8799869369348300745}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: AttachTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4706853031489767953}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.38, y: 0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5857758415098414598}
@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5857758414438608613}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 5857758414701453141}
   - component: {fileID: 5857758414701453162}
   - component: {fileID: 5857758414701453163}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,6 +417,7 @@ GameObject:
   - component: {fileID: 5857758415098414598}
   - component: {fileID: 5623944137951644101}
   - component: {fileID: 7524352890771404513}
+  - component: {fileID: 5198619428159557410}
   m_Layer: 6
   m_Name: Laparoscopy
   m_TagString: Untagged
@@ -530,8 +531,8 @@ MonoBehaviour:
         m_CallState: 2
   m_CustomReticle: {fileID: 0}
   m_AttachTransform: {fileID: 8799869369348300745}
-  m_AttachEaseInTime: 0.15
-  m_MovementType: 1
+  m_AttachEaseInTime: 0
+  m_MovementType: 2
   m_TrackPosition: 1
   m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
@@ -561,6 +562,19 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 0.25
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
+--- !u!65 &5198619428159557410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857758415098414599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7569795, y: 2.9781797, z: 1.5749029}
+  m_Center: {x: -0.16081673, y: 0.98908967, z: 0}
 --- !u!1 &5857758415303334871
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +587,7 @@ GameObject:
   - component: {fileID: 5857758415303334867}
   - component: {fileID: 5857758415303334864}
   - component: {fileID: 5857758415303334865}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: CubeTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +666,7 @@ BoxCollider:
   m_GameObject: {fileID: 5857758415303334871}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -668,7 +682,7 @@ GameObject:
   - component: {fileID: 5857758415606310800}
   - component: {fileID: 5857758415606310801}
   - component: {fileID: 5857758415606310806}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +777,7 @@ GameObject:
   - component: {fileID: 5857758415760181099}
   - component: {fileID: 5857758415760181096}
   - component: {fileID: 5857758415760181097}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +871,7 @@ GameObject:
   - component: {fileID: 5857758416022743421}
   - component: {fileID: 5857758416022743423}
   - component: {fileID: 5857758416022743420}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Head_Scissors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5857758416098454977}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -959,7 +973,7 @@ GameObject:
   - component: {fileID: 5857758416342128287}
   - component: {fileID: 5857758416342128284}
   - component: {fileID: 5857758416342128285}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1054,7 +1068,7 @@ GameObject:
   - component: {fileID: 5857758416418941631}
   - component: {fileID: 5857758416418941628}
   - component: {fileID: 5857758416418941629}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1147,7 +1161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5857758416421765148}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Triggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,7 +1195,7 @@ GameObject:
   - component: {fileID: 2216991541616702735}
   - component: {fileID: 1093501599608468891}
   - component: {fileID: 8300307199631365326}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: colliderCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1270,7 +1284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5517143265825493149}
   - component: {fileID: 1620282949878675966}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: scptController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1320,7 +1334,7 @@ GameObject:
   - component: {fileID: 1931527863418803005}
   - component: {fileID: 1766479718182960691}
   - component: {fileID: 2471712847808575474}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1414,7 +1428,7 @@ GameObject:
   - component: {fileID: 2089949028066843980}
   - component: {fileID: 468874949002491593}
   - component: {fileID: 1713070603688200620}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: colliderCheck
   m_TagString: CutCollider
   m_Icon: {fileID: 0}
@@ -1467,7 +1481,7 @@ GameObject:
   - component: {fileID: 1446320017195591859}
   - component: {fileID: 1756299980608380747}
   - component: {fileID: 7622218904964160846}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: Head_Mover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1537,7 +1551,7 @@ GameObject:
   - component: {fileID: 2453878653578287304}
   - component: {fileID: 5408760378628219052}
   - component: {fileID: 2232157697036666966}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1645,7 @@ GameObject:
   - component: {fileID: 1724411519891855606}
   - component: {fileID: 8134742265758701550}
   - component: {fileID: 6076870482035178133}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -32,7 +32,6 @@ public class toolControl : MonoBehaviour
 
     public void playCutAnim()
     {
-        Debug.Log("AAAAAAAAAAAAA");
         if (headScpt.toolID == 0)  // 0 = scissor
         {
             cutAnimControl.SetTrigger("Cut");
