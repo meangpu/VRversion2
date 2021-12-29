@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -34,7 +36,10 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Losegame:
                 break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
        }
+
     }
 
 }
