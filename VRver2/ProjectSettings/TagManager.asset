@@ -43,3 +43,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: PauseUI
+    uniqueID: 2043969939
+    locked: 0

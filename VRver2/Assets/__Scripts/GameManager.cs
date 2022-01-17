@@ -3,10 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+public enum GameState
+{
+    Mainmenu,
+    Playing,
+    Wingame,
+    Losegame,
+    Pause
+}
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public static event Action<GameState> OnGameStateChange;
 
     public GameState state;
     private void Awake() 
@@ -36,20 +45,15 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Losegame:
                 break;
+            case GameState.Pause:
+                break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(newState), newState, null);
        }
+
+       OnGameStateChange?.Invoke(newState);  // PREVENT NULL ERROR 
 
     }
 
 }
 
-
-
-public enum GameState
-{
-    Mainmenu,
-    Playing,
-    Wingame,
-    Losegame
-}
