@@ -14,5 +14,10 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene(index);
     }
 
+    public void RestartThisScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 
 }
