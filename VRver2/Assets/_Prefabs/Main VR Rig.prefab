@@ -3177,7 +3177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2868942223848050555}
   - component: {fileID: 2442674613849902014}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PauseGreyVolumn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
