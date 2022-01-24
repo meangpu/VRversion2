@@ -9,6 +9,7 @@ public class SettingSlider : MonoBehaviour
     [Header("Height")]
     [SerializeField] TMP_Text eyeText;
     [SerializeField] Slider eyeSlider;
+    [SerializeField] Transform eyeTrans;
 
     [SerializeField] TMP_Text tableText;
     [SerializeField] Slider tableSlider;
@@ -28,6 +29,7 @@ public class SettingSlider : MonoBehaviour
         eyeSlider.onValueChanged.AddListener((v) => 
         {
             eyeText.SetText(v.ToString("0.00"));
+
         });
 
         tableSlider.onValueChanged.AddListener((v) => 
@@ -52,8 +54,12 @@ public class SettingSlider : MonoBehaviour
             musicVolText.SetText(v.ToString("0.00"));
         });
 
+    }
 
-
+    public void setEyeLevel()
+    {
+        Vector3 newH = new Vector3(eyeTrans.position.x, eyeSlider.value, eyeTrans.position.z);
+        eyeTrans.position = newH;
     }
 
 
