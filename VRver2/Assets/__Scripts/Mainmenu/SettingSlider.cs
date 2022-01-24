@@ -10,6 +10,8 @@ public class SettingSlider : MonoBehaviour
     [SerializeField] TMP_Text eyeText;
     [SerializeField] Slider eyeSlider;
     [SerializeField] Transform eyeTrans;
+    [SerializeField] Transform headValue;
+    [SerializeField] TMP_Text nowHeadText;
 
     [SerializeField] TMP_Text tableText;
     [SerializeField] Slider tableSlider;
@@ -60,6 +62,12 @@ public class SettingSlider : MonoBehaviour
     {
         Vector3 newH = new Vector3(eyeTrans.position.x, eyeSlider.value, eyeTrans.position.z);
         eyeTrans.position = newH;
+    }
+
+    public void getEyeValueNow()
+    {
+        float nowhead = headValue.transform.position.y;
+        nowHeadText.SetText(nowhead.ToString("0.00"));
     }
 
 
