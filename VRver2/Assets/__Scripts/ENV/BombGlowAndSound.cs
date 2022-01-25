@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Threading;
 using UnityEngine;
 
 public class BombGlowAndSound : MonoBehaviour
@@ -11,9 +12,15 @@ public class BombGlowAndSound : MonoBehaviour
     [SerializeField] Material greenGlow;
     [SerializeField] AudioSource beepSound;
     [SerializeField] bool isRed;
+    CancellationTokenSource _tokenSource = null;
 
     public async void doTickBomb()
     {
+        _tokenSource = new CancellationTokenSource();
+        var token = _tokenSource.Token;
+
+
+
         if (!isRed)
         {
             meshRender.material = greenGlow;
@@ -28,6 +35,11 @@ public class BombGlowAndSound : MonoBehaviour
             await Task.Delay(210);
         }
         await Task.Yield();
+
+        if(token.IsCancellationRequested)
+        {
+            return;   
+        }
         doTickBomb();
     }
 
