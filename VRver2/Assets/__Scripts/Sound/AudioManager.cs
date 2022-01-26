@@ -29,6 +29,7 @@ public class AudioManager : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volumn;
             s.source.pitch = s.pitch;
+            s.source.outputAudioMixerGroup = s.mixerGroup;
         }
     }
 
@@ -41,7 +42,6 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Play();
     }
-
 
     public void PlayOne(string name, float vol)
     {

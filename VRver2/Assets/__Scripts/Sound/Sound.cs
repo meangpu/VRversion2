@@ -9,6 +9,7 @@ public class Sound
     // FindObjectOfType<AudioManager>().Play("soundName");
     public string audioName;
     public AudioClip clip;
+    public AudioMixerGroup mixerGroup;
     [Range(0, 1)]
     public float volumn;
     [Range(0.1f, 3f)]
