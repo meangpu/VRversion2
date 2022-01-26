@@ -15,6 +15,7 @@ public class SettingSlider : MonoBehaviour
     // [SerializeField] TMP_Text nowHeadText;
     [SerializeField] bool SetALLText;
     [SerializeField] bool LoadFromSaved;
+    [SerializeField] bool ForLoadOnly = false;
 
     [Header("VolumnMixer")]
     [SerializeField] AudioMixer mixer;
@@ -30,6 +31,12 @@ public class SettingSlider : MonoBehaviour
 
     private void Start() 
     {
+        if (ForLoadOnly)
+        {
+            LoadAllSavedValue();
+            return;
+        }
+
         if (SetALLText)
         {
             setAllText();
