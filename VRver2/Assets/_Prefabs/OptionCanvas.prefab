@@ -1602,6 +1602,8 @@ MonoBehaviour:
   eyeTrans: {fileID: 0}
   headValue: {fileID: 0}
   SetALLText: 0
+  LoadFromSaved: 0
+  ForLoadOnly: 0
   mixer: {fileID: 24100000, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
   masterVolText: {fileID: 1872002644026083731}
   masterVolSlider: {fileID: 1872002644467390517}
@@ -2819,7 +2821,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &1872002645979278178
 MonoBehaviour:
   m_ObjectHideFlags: 0
