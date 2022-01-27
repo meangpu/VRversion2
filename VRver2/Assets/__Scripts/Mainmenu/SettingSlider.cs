@@ -110,8 +110,7 @@ public class SettingSlider : MonoBehaviour
         float oldEyeValue = PlayerPrefs.GetFloat("EyeLevel");
         Vector3 newH = new Vector3(eyeTrans.localPosition.x, oldEyeValue, eyeTrans.localPosition.z);
         eyeTrans.localPosition = newH;
-        Debug.Log(eyeTrans);
-        Debug.Log($"Set Eye Trans! to {newH}");
+
 
         if (eyeText != null)
         {
