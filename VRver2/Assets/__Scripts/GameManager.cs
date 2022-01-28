@@ -5,7 +5,7 @@ using System;
 
 public enum GameState
 {
-    Mainmenu,
+    Waiting,
     Playing,
     Wingame,
     Losegame,
@@ -31,6 +31,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start() 
+    {
+        UpdateGameState(GameState.Waiting);
+    }
+
  
     public void UpdateGameState(GameState newState)
     {
@@ -38,7 +43,7 @@ public class GameManager : MonoBehaviour
 
         switch (newState)
         {
-            case GameState.Mainmenu:
+            case GameState.Waiting:
                 break;
             case GameState.Playing:
                 break;
