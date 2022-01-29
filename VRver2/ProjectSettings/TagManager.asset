@@ -6,6 +6,9 @@ TagManager:
   tags:
   - CutCollider
   - InfoPanel
+  - LeftLa
+  - RightLa
+  - CamTool
   layers:
   - Default
   - TransparentFX
