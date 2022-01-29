@@ -11,8 +11,31 @@ public class Timer : MonoBehaviour
     [SerializeField] TMP_Text textTime;
     public bool startCountdown;
 
+    private void Awake() 
+    {
+        GameManager.OnGameStateChange += ListenValueFromGameManager;
+    }
+
+    private void OnDestroy() 
+    {
+        GameManager.OnGameStateChange -= ListenValueFromGameManager;
+    }
+
+    void ListenValueFromGameManager(GameState state)
+    {
+        if (state != GameState.Playing)
+        {
+            return;
+        }
+        else
+        {
+            startCountdown = true;
+        }
+    }
+
     void Start()
     {
+        timeValue = GameManager.Instance.totalTime;
         resetTimer();
     }
 
@@ -32,7 +55,7 @@ public class Timer : MonoBehaviour
         }
     }
 
-    void resetTimer()
+    public void resetTimer()
     {
         _timeNow = timeValue;
         DisplayTime(_timeNow);

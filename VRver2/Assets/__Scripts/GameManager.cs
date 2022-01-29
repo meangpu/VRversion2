@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public static event Action<GameState> OnGameStateChange;
+    public float totalTime = 90; 
+    public int score; 
 
     public GameState state;
     private void Awake() 
@@ -23,7 +25,6 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -59,6 +60,11 @@ public class GameManager : MonoBehaviour
 
        OnGameStateChange?.Invoke(newState);  // PREVENT NULL ERROR 
 
+    }
+
+    public void StartGameFromButton()
+    {
+        UpdateGameState(GameState.Playing);
     }
 
 }

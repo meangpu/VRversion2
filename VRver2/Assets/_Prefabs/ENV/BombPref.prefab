@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 2593034082237410396}
   - component: {fileID: 5937975649061926181}
   - component: {fileID: 2200758635265063632}
+  - component: {fileID: 1690278640459437873}
   m_Layer: 0
   m_Name: Snapping Left
   m_TagString: Untagged
@@ -163,6 +164,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &1690278640459437873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363683686034736768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579555216d6a65e4e868b8d648cd17f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolReadyScpt: {fileID: 0}
+  thisSlotName: LeftLa
 --- !u!1 &1826720245919286870
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +361,7 @@ GameObject:
   - component: {fileID: 2584029487349820116}
   - component: {fileID: 7929087778145194892}
   - component: {fileID: 4082593163575151953}
+  - component: {fileID: 1635234724140380905}
   m_Layer: 0
   m_Name: Snapping Right
   m_TagString: Untagged
@@ -466,6 +482,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &1635234724140380905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085303674779446784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579555216d6a65e4e868b8d648cd17f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolReadyScpt: {fileID: 0}
+  thisSlotName: RightLa
 --- !u!1 &4466759745653854447
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,7 +1015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshRender: {fileID: 7879007241781338728}
   redGlow: {fileID: 2100000, guid: 96a1f8b546196ab48882c2521fc2de05, type: 2}
-  whiteGlow: {fileID: 2100000, guid: 99d44ce5fc9ad404186abb68494c8782, type: 2}
+  whiteGlow: {fileID: 2100000, guid: cea3f10f3e25eb14ead9cb483f639696, type: 2}
   greenGlow: {fileID: 2100000, guid: ceb122e73d2965848a46c256b718b4b2, type: 2}
   beepSound: {fileID: 7231624436092357857}
   isRed: 1
@@ -1481,6 +1511,7 @@ GameObject:
   - component: {fileID: 2772111940111506666}
   - component: {fileID: 5360570641029150463}
   - component: {fileID: 5862576073383828333}
+  - component: {fileID: 5716551566297716129}
   m_Layer: 0
   m_Name: SnappingCam
   m_TagString: Untagged
@@ -1601,6 +1632,20 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &5716551566297716129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8282495138192886273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579555216d6a65e4e868b8d648cd17f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toolReadyScpt: {fileID: 0}
+  thisSlotName: CamTool
 --- !u!1 &9127672745874307905
 GameObject:
   m_ObjectHideFlags: 0
