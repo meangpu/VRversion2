@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5165654311373079985}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -44,9 +44,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - audioName: 
-    clip: {fileID: 0}
-    volumn: 0
-    pitch: 0
+  - audioName: mainBG
+    clip: {fileID: 8300000, guid: cf6bd5d30fdf61644a0fafbaf4277989, type: 3}
+    mixerGroup: {fileID: -5041607224030255779, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.4
+    pitch: 1
+    blend: 0
+    loop: 1
+    source: {fileID: 0}
+  - audioName: BombButtonWrong
+    clip: {fileID: 8300000, guid: 3d30f596365f4fd48aecf028fab6a88c, type: 3}
+    mixerGroup: {fileID: 3585453016504125781, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.4
+    pitch: 1
+    blend: 0
+    loop: 0
+    source: {fileID: 0}
+  - audioName: BombButtonRight
+    clip: {fileID: 8300000, guid: 80f10289acd88d649816e208b8a4fd6f, type: 3}
+    mixerGroup: {fileID: 3585453016504125781, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.4
+    pitch: 1
+    blend: 0
     loop: 0
     source: {fileID: 0}

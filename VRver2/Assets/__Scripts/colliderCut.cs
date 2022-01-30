@@ -5,6 +5,7 @@ public class colliderCut : MonoBehaviour
 {
  	ObiSolver solver;
     [SerializeField] string tagName = "kill";
+	[SerializeField] string wantWireNameTag;
  
 	void Awake(){
 		solver = GetComponent<ObiSolver>();
@@ -36,6 +37,15 @@ public class colliderCut : MonoBehaviour
                         ObiSolver.ParticleInActor pa = solver.particleToActor[particleIndex];
                         ObiRope nowRope = pa.actor as ObiRope;  // get to rope script
                         meCutRope(nowRope, pa.indexInActor);  // get into actual index of rope
+						if(nowRope.gameObject.tag != wantWireNameTag)
+						{
+							return;
+						}
+						else
+						{
+							QuestManager.Instance.finishQuestByName("Wire");
+							FindObjectOfType<AudioManager>().Play("BombButtonRight");
+						}
                     }
 				}
 			}

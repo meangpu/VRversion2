@@ -10,14 +10,13 @@ public class FuseTriggerCheck : MonoBehaviour
         
         if (other.gameObject.tag != "Fuse")
         {
-            Debug.Log(other.gameObject.tag);
             return;
         }
         else
         {
-            QuestManager.Instance.finishQuest(fuseQuestText);
-
-            Debug.Log("Yeah wow finish fuse");
+ 
+            QuestManager.Instance.finishQuestByName("Fuse");
+            FindObjectOfType<AudioManager>().Play("BombButtonRight");
         }
  
     }

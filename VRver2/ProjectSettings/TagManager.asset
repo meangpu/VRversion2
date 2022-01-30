@@ -11,6 +11,7 @@ TagManager:
   - CamTool
   - Fuse
   - RespawnFloor
+  - CorrectWire
   layers:
   - Default
   - TransparentFX

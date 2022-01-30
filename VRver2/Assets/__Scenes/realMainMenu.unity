@@ -9614,30 +9614,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 664149890120567922, guid: 486e96c93292b974c88116a6c0eacca7, type: 3}
-      propertyPath: sounds.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: cf6bd5d30fdf61644a0fafbaf4277989, type: 3}
-    - target: {fileID: 664149890120567922, guid: 486e96c93292b974c88116a6c0eacca7, type: 3}
-      propertyPath: sounds.Array.data[0].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 664149890120567922, guid: 486e96c93292b974c88116a6c0eacca7, type: 3}
-      propertyPath: sounds.Array.data[0].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 664149890120567922, guid: 486e96c93292b974c88116a6c0eacca7, type: 3}
-      propertyPath: sounds.Array.data[0].volumn
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 664149890120567922, guid: 486e96c93292b974c88116a6c0eacca7, type: 3}
-      propertyPath: sounds.Array.data[0].audioName
-      value: mainBG
-      objectReference: {fileID: 0}
-    - target: {fileID: 664149890120567922, guid: 486e96c93292b974c88116a6c0eacca7, type: 3}
-      propertyPath: sounds.Array.data[0].mixerGroup
-      value: 
-      objectReference: {fileID: -5041607224030255779, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
     - target: {fileID: 5165654311373079984, guid: 486e96c93292b974c88116a6c0eacca7, type: 3}
       propertyPath: m_RootOrder
       value: 0

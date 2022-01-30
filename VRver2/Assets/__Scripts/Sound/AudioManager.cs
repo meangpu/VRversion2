@@ -30,6 +30,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volumn;
             s.source.pitch = s.pitch;
             s.source.outputAudioMixerGroup = s.mixerGroup;
+            s.source.spatialBlend = s.blend;
         }
     }
 
