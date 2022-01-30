@@ -39,6 +39,7 @@ public class colliderCut : MonoBehaviour
                         meCutRope(nowRope, pa.indexInActor);  // get into actual index of rope
 						if(nowRope.gameObject.tag != wantWireNameTag)
 						{
+							// bully tud pit ลงโทษการตัดผิด
 							return;
 						}
 						else
