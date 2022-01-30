@@ -48,7 +48,9 @@ MonoBehaviour:
   scissorObj: {fileID: 5857758416022743410}
   moverObj: {fileID: 7971324439108463987}
   toolScpt: {fileID: 1620282949878675966}
-  toolID: 0
+  scissorText: {fileID: 3523987432796960149}
+  moverText: {fileID: 6076870482035178133}
+  toolID: 1
   maxCD: 1
 --- !u!1 &2514734203738538650
 GameObject:
@@ -822,6 +824,7 @@ GameObject:
   - component: {fileID: 5623944137951644101}
   - component: {fileID: 7524352890771404513}
   - component: {fileID: 6860239409591592185}
+  - component: {fileID: 1384150413872616821}
   m_Layer: 6
   m_Name: Laparoscopy
   m_TagString: Untagged
@@ -975,6 +978,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 6.76, z: 1.2}
   m_Center: {x: 0, y: -1.07, z: 0}
+--- !u!114 &1384150413872616821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857758415098414599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62359d80fdc0e4315ab6331b78ec5b90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kinematicForParticles: 0
 --- !u!1 &5857758415303334871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1193,7 @@ GameObject:
   - component: {fileID: 5857758415760181099}
   - component: {fileID: 5857758415760181096}
   - component: {fileID: 5857758415760181097}
+  - component: {fileID: 8162403326757002986}
   m_Layer: 0
   m_Name: bottom
   m_TagString: Untagged
@@ -1260,6 +1277,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8162403326757002986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857758415760181103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thickness: 0
+  material: {fileID: 0}
+  filter: -65535
+  m_SourceCollider: {fileID: 5857758415760181097}
+  m_DistanceField: {fileID: 0}
 --- !u!1 &5857758416022743410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1305,7 @@ GameObject:
   - component: {fileID: 5857758416022743421}
   - component: {fileID: 5857758416022743423}
   - component: {fileID: 5857758416022743420}
+  - component: {fileID: 6299485809426729648}
   m_Layer: 0
   m_Name: Head_Scissors
   m_TagString: Untagged
@@ -1329,6 +1364,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6299485809426729648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857758416022743410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47dd8180282c5de4486fc59439888c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutObject: {fileID: 7795828775327353475}
 --- !u!1 &5857758416098454982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1421,7 @@ GameObject:
   - component: {fileID: 5857758416342128287}
   - component: {fileID: 5857758416342128284}
   - component: {fileID: 5857758416342128285}
+  - component: {fileID: 4640773046357817348}
   m_Layer: 0
   m_Name: top
   m_TagString: Untagged
@@ -1456,6 +1505,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4640773046357817348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857758416342128275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thickness: 0
+  material: {fileID: 0}
+  filter: -65535
+  m_SourceCollider: {fileID: 5857758416342128285}
+  m_DistanceField: {fileID: 0}
 --- !u!1 &5857758416418941619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,8 +1862,6 @@ MonoBehaviour:
   cutAnimControl: {fileID: 5857758416022743420}
   moveAnimControl: {fileID: 7622218904964160846}
   headScpt: {fileID: 5342966452282518151}
-  scissorText: {fileID: 3523987432796960149}
-  moverText: {fileID: 6076870482035178133}
 --- !u!1 &7113968319459325763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,6 +2214,7 @@ GameObject:
   - component: {fileID: 1931527863418803005}
   - component: {fileID: 1766479718182960691}
   - component: {fileID: 2471712847808575474}
+  - component: {fileID: 1307148012019729857}
   m_Layer: 0
   m_Name: bottom
   m_TagString: Untagged
@@ -2233,6 +2298,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1307148012019729857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173104907249476341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thickness: 0
+  material: {fileID: 0}
+  filter: -65535
+  m_SourceCollider: {fileID: 0}
+  m_DistanceField: {fileID: 0}
 --- !u!1 &7795828775327353475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2326,7 @@ GameObject:
   - component: {fileID: 2089949028066843980}
   - component: {fileID: 468874949002491593}
   - component: {fileID: 1713070603688200620}
+  - component: {fileID: 5991271573580464753}
   m_Layer: 0
   m_Name: colliderCheck
   m_TagString: CutCollider
@@ -2281,11 +2364,28 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7795828775327353475}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.35662675
+  m_Radius: 0.5
   m_Center: {x: -0.14337343, y: 9.504708e-16, z: 0.0000000053627933}
+--- !u!114 &5991271573580464753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7795828775327353475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thickness: 0
+  material: {fileID: 0}
+  filter: -65535
+  m_SourceCollider: {fileID: 1713070603688200620}
+  m_DistanceField: {fileID: 0}
 --- !u!1 &7971324439108463987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2505,7 @@ GameObject:
   - component: {fileID: 2453878653578287304}
   - component: {fileID: 5408760378628219052}
   - component: {fileID: 2232157697036666966}
+  - component: {fileID: 1298659749236797}
   m_Layer: 0
   m_Name: top
   m_TagString: Untagged
@@ -2488,6 +2589,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1298659749236797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034385344438974667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757b231cedd544c583ef8aeaf773b2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thickness: 0
+  material: {fileID: 0}
+  filter: -65535
+  m_SourceCollider: {fileID: 0}
+  m_DistanceField: {fileID: 0}
 --- !u!1 &9129605945240388460
 GameObject:
   m_ObjectHideFlags: 0

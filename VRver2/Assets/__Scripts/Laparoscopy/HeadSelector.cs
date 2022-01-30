@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
-
+using TMPro;
 
 public class HeadSelector : MonoBehaviour
 {
-
-
     [SerializeField] GameObject scissorObj; 
     [SerializeField] GameObject moverObj; 
-    [SerializeField] toolControl toolScpt;
+    [SerializeField] AnimToolControl toolScpt;
+
+    [Header("ToolText")]
+    [SerializeField] TMP_Text scissorText;
+    [SerializeField] TMP_Text moverText;
+
+    [Header("ToolChange")]
     public int toolID = 0;
     public float maxCD = 1;
     private float cd = 1;
@@ -73,14 +77,28 @@ public class HeadSelector : MonoBehaviour
         if (toolID == 0)
         {
             selScissor();
-            StartCoroutine(toolScpt.showScissorText());
+            StartCoroutine(showScissorText());
         }
         else if (toolID == 1)
         {
             selMover();
-            StartCoroutine(toolScpt.showMoverText());
+            StartCoroutine(showMoverText());
         }
 
+    }
+
+    public IEnumerator showScissorText()
+    {
+        scissorText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        scissorText.gameObject.SetActive(false);
+    }
+
+    public IEnumerator showMoverText()
+    {
+        moverText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        moverText.gameObject.SetActive(false);
     }
 
 }
