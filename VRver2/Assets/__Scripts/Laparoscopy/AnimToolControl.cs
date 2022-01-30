@@ -18,6 +18,8 @@ public class AnimToolControl : MonoBehaviour
     const string IDLE = "idle";
     const string MOVE = "move";
 
+
+    [ContextMenu("Hold")]
     public void playholdAnim()
     {
         if (headScpt.toolID == 0)  // 0 = scissor
@@ -33,6 +35,7 @@ public class AnimToolControl : MonoBehaviour
         
     }
 
+    [ContextMenu("Cut")]
     public void playCutAnim()
     {
         if (headScpt.toolID == 0)  // 0 = scissor

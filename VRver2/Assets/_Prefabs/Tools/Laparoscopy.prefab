@@ -50,7 +50,7 @@ MonoBehaviour:
   toolScpt: {fileID: 1620282949878675966}
   scissorText: {fileID: 3523987432796960149}
   moverText: {fileID: 6076870482035178133}
-  toolID: 1
+  toolID: 0
   maxCD: 1
 --- !u!1 &2514734203738538650
 GameObject:

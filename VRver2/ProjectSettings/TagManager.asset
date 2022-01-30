@@ -9,6 +9,8 @@ TagManager:
   - LeftLa
   - RightLa
   - CamTool
+  - Fuse
+  - RespawnFloor
   layers:
   - Default
   - TransparentFX
