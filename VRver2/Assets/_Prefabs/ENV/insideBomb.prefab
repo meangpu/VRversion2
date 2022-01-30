@@ -1358,6 +1358,7 @@ GameObject:
   - component: {fileID: 4721858343449599681}
   - component: {fileID: 205256683902828475}
   - component: {fileID: 3901616874058620898}
+  - component: {fileID: 6282595566602749038}
   m_Layer: 10
   m_Name: Holder
   m_TagString: Untagged
@@ -1478,6 +1479,18 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &6282595566602749038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122812621145772180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccb0288a860d92439f9e470c22cb56d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &570681519152661252
 GameObject:
   m_ObjectHideFlags: 0
