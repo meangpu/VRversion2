@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
 
 public enum GameState
 {
@@ -17,7 +18,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public static event Action<GameState> OnGameStateChange;
     public float totalTime = 90; 
-    public int score; 
+    [SerializeField] TMP_Text scoreWinText;
+    [SerializeField] GameObject winPanel;
+    [SerializeField] GameObject losePanel;
+
+
 
     public GameState state;
     private void Awake() 
@@ -49,6 +54,7 @@ public class GameManager : MonoBehaviour
             case GameState.Playing:
                 break;
             case GameState.Wingame:
+                Debug.Log("PlayerWining");
                 break;
             case GameState.Losegame:
                 break;
@@ -67,7 +73,15 @@ public class GameManager : MonoBehaviour
         UpdateGameState(GameState.Playing);
         AudioManager.instance.StopAllSound();
         AudioManager.instance.Play("level1");
+    }
 
+    public void DoWingame(int score)
+    {
+        winPanel.SetActive(true);
+        scoreWinText.SetText(score.ToString());
+        AudioManager.instance.StopAllSound();
+        AudioManager.instance.Play("Wining");
+        AudioManager.instance.Play("BombButtonRight");
     }
 
 }

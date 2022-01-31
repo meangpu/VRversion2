@@ -25,7 +25,8 @@ public class ButtonVR : MonoBehaviour
             {
                 QuestManager.Instance.finishQuestByName("Button");
                 FindObjectOfType<AudioManager>().Play("BombButtonRight");
-                // wingame
+                
+                GameManager.Instance.UpdateGameState(GameState.Wingame);
 
             }
             else

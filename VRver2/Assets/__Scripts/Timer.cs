@@ -23,13 +23,21 @@ public class Timer : MonoBehaviour
 
     void ListenValueFromGameManager(GameState state)
     {
-        if (state != GameState.Playing)
+        if (state != GameState.Playing && state != GameState.Losegame && state != GameState.Wingame)
         {
             return;
         }
         else
         {
-            startCountdown = true;
+            if (state == GameState.Playing)
+            {
+                startCountdown = true;
+            }
+            else if (state == GameState.Wingame)
+            {
+                startCountdown = false;
+                SendTimeBackToScoreGameMnager();
+            }
         }
     }
 
@@ -50,9 +58,15 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                // time up game over
+                GameManager.Instance.UpdateGameState(GameState.Losegame);
             }
         }
+    }
+
+
+    public void SendTimeBackToScoreGameMnager()
+    {
+        GameManager.Instance.DoWingame((int)(_timeNow*100));
     }
 
     public void resetTimer()

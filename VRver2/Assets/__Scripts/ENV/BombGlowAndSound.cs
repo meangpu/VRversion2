@@ -25,14 +25,27 @@ public class BombGlowAndSound : MonoBehaviour
 
     void HandleGameManagerChangeState(GameState state)
     {
-        if (state != GameState.Playing)
+        if (state != GameState.Playing && state != GameState.Wingame && state != GameState.Losegame)
         {
             return;
         }
         else
         {
-            isRed = true;
-            StartCoroutine(doTickBomb());
+            if(state == GameState.Playing)
+            {
+                isRed = true;
+                StartCoroutine(doTickBomb());
+            }
+
+            else if(state == GameState.Wingame)
+            {
+                isRed = false;
+                StartCoroutine(doTickBomb());
+                changeToGreenMat();
+            }
+
+
+
         }
     }
 
@@ -47,8 +60,8 @@ public class BombGlowAndSound : MonoBehaviour
     {
         if (!isRed)
         {
-            meshRender.material = greenGlow;
-            yield return null;
+            changeToGreenMat();
+            yield break;
         }
         while (isRed)
         {
@@ -58,6 +71,11 @@ public class BombGlowAndSound : MonoBehaviour
             meshRender.material = whiteGlow;
             yield return new WaitForSeconds(0.21f);
         }
+    }
+
+    public void changeToGreenMat()
+    {
+        meshRender.material = greenGlow;
     }
 }
 

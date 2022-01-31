@@ -55,7 +55,7 @@ public class QuestManager : MonoBehaviour
         q.finishThisQuest();
     }
 
-    [ContextMenu("CHEEEEEE")]
+    [ContextMenu("FinishWire")]
     public void finishWire()
     {
         finishQuestByName("Wire");

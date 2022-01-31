@@ -19,5 +19,11 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void GoToStringAndStopSound(string scenename)
+    {
+        AudioManager.instance.StopAllSound();
+        SceneManager.LoadScene(scenename);
+    }
+
 
 }
