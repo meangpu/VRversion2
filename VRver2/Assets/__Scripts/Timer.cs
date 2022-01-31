@@ -54,7 +54,7 @@ public class Timer : MonoBehaviour
             if (_timeNow <= 0)
             {
                 GameManager.Instance.UpdateGameState(GameState.Losegame);
-                
+                startCountdown = false;
             }
             else
             {
