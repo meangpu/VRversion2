@@ -4562,6 +4562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9260786e826414a9af6468414bed2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playName: mainBG
 --- !u!4 &899714788
 Transform:
   m_ObjectHideFlags: 0

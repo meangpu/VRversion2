@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] sounds;
     public static AudioManager instance;
 
+    private AudioSource[] allAudioSources;
+
     private void Awake() 
     {
         if (instance == null)
@@ -69,6 +71,18 @@ public class AudioManager : MonoBehaviour
         }   
         
     }
+
+    public void StopAllSound()
+    {
+        allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource aud in allAudioSources)
+        {
+            Debug.Log(aud);
+            aud.Stop();
+        }
+    }
+    
+
 
 
 

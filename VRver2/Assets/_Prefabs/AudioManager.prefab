@@ -52,6 +52,14 @@ MonoBehaviour:
     blend: 0
     loop: 1
     source: {fileID: 0}
+  - audioName: level1
+    clip: {fileID: 8300000, guid: 026a27c7b0c898c4dac76a3e57ffccce, type: 3}
+    mixerGroup: {fileID: -5041607224030255779, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.15
+    pitch: 1
+    blend: 0
+    loop: 0
+    source: {fileID: 0}
   - audioName: BombButtonWrong
     clip: {fileID: 8300000, guid: 3d30f596365f4fd48aecf028fab6a88c, type: 3}
     mixerGroup: {fileID: 3585453016504125781, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}

@@ -65,6 +65,9 @@ public class GameManager : MonoBehaviour
     public void StartGameFromButton()
     {
         UpdateGameState(GameState.Playing);
+        AudioManager.instance.StopAllSound();
+        AudioManager.instance.Play("level1");
+
     }
 
 }
