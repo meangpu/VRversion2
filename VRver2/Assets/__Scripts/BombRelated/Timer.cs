@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     private float _timeNow;
     [SerializeField] TMP_Text textTime;
     public bool startCountdown;
+    public bool BrainLess;
 
     private void Awake() 
     {
@@ -77,7 +78,10 @@ public class Timer : MonoBehaviour
 
     public void SendTimeBackToScoreGameMnager()
     {
-        GameManager.Instance.DoWingame((int)(_timeNow*100));
+        if(!BrainLess)
+        {
+            GameManager.Instance.DoWingame((int)(_timeNow*100));
+        }
     }
 
     public void resetTimer()

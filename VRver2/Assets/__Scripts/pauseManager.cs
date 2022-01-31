@@ -12,6 +12,7 @@ public class pauseManager : MonoBehaviour
     [SerializeField] float maxWaitTime;
     private float timeBetweenWait;
     public XRNode inputSource;
+    private InputDevice device;
     private bool isMenuPress;
     private bool isPaused = false;
 
@@ -20,12 +21,12 @@ public class pauseManager : MonoBehaviour
     void Start()
     {
         unpauseGame();
+        device = InputDevices.GetDeviceAtXRNode(inputSource);
     }
 
 
     private void Update() 
     {
-        InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
         device.TryGetFeatureValue(CommonUsages.menuButton, out isMenuPress);
 
         if (timeBetweenWait > 0)

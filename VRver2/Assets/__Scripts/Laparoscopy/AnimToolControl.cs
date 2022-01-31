@@ -10,6 +10,7 @@ public class AnimToolControl : MonoBehaviour
     [SerializeField] Animator cutAnimControl;
     [SerializeField] Animator moveAnimControl;
     [SerializeField] HeadSelector headScpt;
+    [SerializeField] MoverHead moveHeadScpt;
     private string cutStateNow;
     private string moveStateNow;
 
@@ -30,6 +31,7 @@ public class AnimToolControl : MonoBehaviour
         else if (headScpt.toolID == 1)
         {
             ChangeAnimMoveState(HOLD);
+            moveHeadScpt.disableMove();
             // moveAnimControl.SetTrigger("Hold");
         }
         
@@ -46,6 +48,7 @@ public class AnimToolControl : MonoBehaviour
         else if (headScpt.toolID == 1)
         {
             ChangeAnimMoveState(MOVE);
+            moveHeadScpt.enableMove();
             // moveAnimControl.SetTrigger("Action");
         }
     }

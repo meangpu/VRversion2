@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3424996094389943277}
   - component: {fileID: 3424996094389943278}
+  - component: {fileID: 1039440476}
+  - component: {fileID: 3424996094753137218}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3424996094389943276}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -44,5 +46,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalTime: 90
-  score: 0
+  scoreWinText: {fileID: 0}
+  winPanel: {fileID: 0}
+  losePanel: {fileID: 0}
   state: 0
+--- !u!114 &1039440476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424996094389943276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd63e5b75e30f549bfa4a09af6b1b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentLeft: {fileID: 0}
+  parentRight: {fileID: 0}
+  childLeft: {fileID: 0}
+  childRight: {fileID: 0}
+--- !u!114 &3424996094753137218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424996094389943276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4d8744c43f6e6499029a5c14585492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxScoreBoardEntries: 5

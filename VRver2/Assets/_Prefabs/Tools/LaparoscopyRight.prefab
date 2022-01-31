@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5342966452282518151, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
+      propertyPath: inputSource
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5687836806691510293, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
       propertyPath: m_TagString
       value: RightLa

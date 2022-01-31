@@ -48,6 +48,7 @@ MonoBehaviour:
   scissorObj: {fileID: 5857758416022743410}
   moverObj: {fileID: 7971324439108463987}
   toolScpt: {fileID: 1620282949878675966}
+  inputSource: 2
   scissorText: {fileID: 3523987432796960149}
   moverText: {fileID: 6076870482035178133}
   toolID: 0
@@ -1862,6 +1863,7 @@ MonoBehaviour:
   cutAnimControl: {fileID: 5857758416022743420}
   moveAnimControl: {fileID: 7622218904964160846}
   headScpt: {fileID: 5342966452282518151}
+  moveHeadScpt: {fileID: 1693939072555572086}
 --- !u!1 &7113968319459325763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2313,7 +2315,7 @@ MonoBehaviour:
   thickness: 0
   material: {fileID: 0}
   filter: -65535
-  m_SourceCollider: {fileID: 0}
+  m_SourceCollider: {fileID: 2471712847808575474}
   m_DistanceField: {fileID: 0}
 --- !u!1 &7795828775327353475
 GameObject:
@@ -2397,6 +2399,7 @@ GameObject:
   - component: {fileID: 1446320017195591859}
   - component: {fileID: 1756299980608380747}
   - component: {fileID: 7622218904964160846}
+  - component: {fileID: 1693939072555572086}
   m_Layer: 0
   m_Name: Head_Mover
   m_TagString: Untagged
@@ -2455,6 +2458,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1693939072555572086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971324439108463987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd593cd50a84b24e80410791056eba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveObject: {fileID: 6766765582998361381}
 --- !u!1 &8400278926925868513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2604,7 +2620,7 @@ MonoBehaviour:
   thickness: 0
   material: {fileID: 0}
   filter: -65535
-  m_SourceCollider: {fileID: 0}
+  m_SourceCollider: {fileID: 2232157697036666966}
   m_DistanceField: {fileID: 0}
 --- !u!1 &9129605945240388460
 GameObject:

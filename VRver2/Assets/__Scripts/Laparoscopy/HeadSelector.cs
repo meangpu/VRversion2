@@ -10,6 +10,10 @@ public class HeadSelector : MonoBehaviour
     [SerializeField] GameObject moverObj; 
     [SerializeField] AnimToolControl toolScpt;
 
+    [Header("XRSetting")]
+    public XRNode inputSource;
+    private InputDevice device;
+
     [Header("ToolText")]
     [SerializeField] TMP_Text scissorText;
     [SerializeField] TMP_Text moverText;
@@ -24,23 +28,12 @@ public class HeadSelector : MonoBehaviour
 
     private void Start() 
     {
-        List<InputDevice> devices = new List<InputDevice>();
-        InputDeviceCharacteristics rightController = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
-        InputDevices.GetDevicesWithCharacteristics(rightController, devices);
-
-        foreach (var item in devices)
-        {
-            Debug.Log(item.name + item.characteristics);
-        }
-        if(devices.Count > 0)
-        {
-            targetDevice = devices[0];
-        }
+        device = InputDevices.GetDeviceAtXRNode(inputSource);
     }
 
     void Update()
     {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.secondaryButton, out pressState))
+        if (device.TryGetFeatureValue(CommonUsages.primaryButton, out pressState))
         {
             if (pressState && cd <= 0)
             {
@@ -65,7 +58,7 @@ public class HeadSelector : MonoBehaviour
         moverObj.SetActive(true);
     }
 
-    [ContextMenu("wasdd")]
+    [ContextMenu("Change Tool Head")]
     public void addNumberToId()
     {
         toolID++;

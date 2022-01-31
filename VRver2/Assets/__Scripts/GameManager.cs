@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text scoreWinText;
     [SerializeField] GameObject winPanel;
     [SerializeField] GameObject losePanel;
+    [SerializeField] ScoreBrain scoreBoardBrain;
 
 
 
@@ -82,6 +83,7 @@ public class GameManager : MonoBehaviour
         AudioManager.instance.StopAllSound();
         AudioManager.instance.Play("BombButtonRight");
         AudioManager.instance.Play("Wining");
+        scoreBoardBrain.AddNewSave(System.DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss"), score);
     }
 
     public void DoLoseGame()

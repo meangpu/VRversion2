@@ -1,32 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
+using System.IO;
 
-public class Scoreboard : MonoBehaviour
+public class ScoreBrain : MonoBehaviour
 {
     [SerializeField] private int maxScoreBoardEntries = 6;
-    [SerializeField] private Transform highscoreHolderTransform = null;
-    [SerializeField] private GameObject scoreboardEntryObject = null;
-    [Header("Test")]
-    [SerializeField] private string testEntryName = "New Name";
-    [SerializeField] private int testEntryScore = 0;
     [SerializeField] string levelName = "level1";
     private string SavePath => $"{Application.persistentDataPath}/{levelName}.json";
 
-    private void Start(){
+    private void Start()
+    {
         print(SavePath);
         ScoreboardSaveData savedScores = GetSavedScores();
-        UpdateUI(savedScores);
         SaveScores(savedScores);
     }
 
-    [ContextMenu("Add Test Entry")] 
-    public void AddTestEntry(){
+
+    public void AddNewSave(string playerName, int score)
+    {
         AddEntry(new ScoreboardEntryData()
         {
-            entryName = testEntryName,
-            entryScore = testEntryScore
+            entryName = playerName,
+            entryScore = score
         });
     }       
 
@@ -38,7 +32,7 @@ public class Scoreboard : MonoBehaviour
         // Check if score is high enough to be added
         for (int i = 0; i < savedScores.highscores.Count; i++)
         {
-            if (testEntryScore > savedScores.highscores[i].entryScore)
+            if (scoreboardEntryData.entryScore > savedScores.highscores[i].entryScore)
             {
                 savedScores.highscores.Insert(i, scoreboardEntryData);
                 scoreAdded = true;
@@ -56,24 +50,10 @@ public class Scoreboard : MonoBehaviour
             savedScores.highscores.RemoveRange(maxScoreBoardEntries, savedScores.highscores.Count - maxScoreBoardEntries);
         }
 
-        UpdateUI(savedScores);
         SaveScores(savedScores);
-
 
     }
  
-    private void UpdateUI(ScoreboardSaveData savedScores)
-    {
-        foreach (Transform child in highscoreHolderTransform)
-        {
-            Destroy(child.gameObject);
-        }
-
-        foreach (ScoreboardEntryData highscore in savedScores.highscores)
-        {
-            Instantiate(scoreboardEntryObject, highscoreHolderTransform).GetComponent<ScoreboardEntryUI>().Initialise(highscore);
-        }
-    } 
 
     private ScoreboardSaveData GetSavedScores()
     {
@@ -98,5 +78,6 @@ public class Scoreboard : MonoBehaviour
             stream.Write(json);
         }
     }
-     
+
+
 }
