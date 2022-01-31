@@ -349,12 +349,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7524352890771404513, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
       propertyPath: m_Colliders.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7524352890771404513, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
       propertyPath: m_Colliders.Array.data[0]
       value: 
-      objectReference: {fileID: 8327109346014011146}
+      objectReference: {fileID: 9075125500501976216}
     - target: {fileID: 7524352890771404513, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
       propertyPath: m_Colliders.Array.data[1]
       value: 
@@ -417,9 +417,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
---- !u!65 &8327109346014011146 stripped
+--- !u!65 &9075125500501976216 stripped
 BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 5857758414701453163, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6860239409591592185, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
   m_PrefabInstance: {fileID: 2505450458401063009}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &8327109346490063792 stripped

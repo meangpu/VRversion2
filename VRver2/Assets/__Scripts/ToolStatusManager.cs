@@ -18,21 +18,24 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] Image bgLeft;
     [SerializeField] TMP_Text wordLeft;
     [SerializeField] XRGrabInteractable leftGrabScpt;
+    [SerializeField] Rigidbody leftRb;
     public bool statusLeft;
 
     [Header("Cam")]
     [SerializeField] Image bgCam;
     [SerializeField] TMP_Text wordCam;
     [SerializeField] XRGrabInteractable camGrabScpt;
+    [SerializeField] Rigidbody camRb;
     public bool statusCam;
 
     [Header("Right")]
     [SerializeField] Image bgRight;
     [SerializeField] TMP_Text wordRight;
     [SerializeField] XRGrabInteractable rightGrabScpt;
+    [SerializeField] Rigidbody rightRb;
     public bool statusRight;
 
-    [Header("Right")]
+    [Header("start")]
     [SerializeField] Button startGameBtn;
     [Header("CamSetting")]
     [SerializeField] Transform CamToolGameObj;
@@ -77,18 +80,21 @@ public class ToolStatusManager : MonoBehaviour
             if(tagName == "LeftLa")
             {
                 statusLeft = true;
-                leftGrabScpt.trackPosition = false;
+                StartCoroutine(doLockTools(leftRb, leftGrabScpt));
+
             }
             if(tagName == "RightLa")
             {
                 statusRight = true;
-                rightGrabScpt.trackPosition = false;
+                StartCoroutine(doLockTools(rightRb, rightGrabScpt));
+
             }
             if(tagName == "CamTool")
             {   
                 statusCam = true;
-                camGrabScpt.trackPosition = false;
-                
+                StartCoroutine(doLockTools(camRb, camGrabScpt));
+
+
                 CamToolGameObj.localPosition = CamPosTarget.position;
                 CamToolGameObj.localRotation = CamPosTarget.rotation;
             }
@@ -108,5 +114,14 @@ public class ToolStatusManager : MonoBehaviour
         }
     }
 
+
+    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, float wait=0.6f)
+    {
+        yield return new WaitForSeconds(wait);
+        _xrGrab.trackPosition = false;
+        _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+        
+
+    }
 
 }
