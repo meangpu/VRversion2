@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class ToolStatusManager : MonoBehaviour
@@ -17,14 +17,19 @@ public class ToolStatusManager : MonoBehaviour
     [Header("Left")]
     [SerializeField] Image bgLeft;
     [SerializeField] TMP_Text wordLeft;
+    [SerializeField] XRGrabInteractable leftGrabScpt;
     public bool statusLeft;
+
     [Header("Cam")]
     [SerializeField] Image bgCam;
     [SerializeField] TMP_Text wordCam;
+    [SerializeField] XRGrabInteractable camGrabScpt;
     public bool statusCam;
+
     [Header("Right")]
     [SerializeField] Image bgRight;
     [SerializeField] TMP_Text wordRight;
+    [SerializeField] XRGrabInteractable rightGrabScpt;
     public bool statusRight;
 
     [Header("Right")]
@@ -72,14 +77,18 @@ public class ToolStatusManager : MonoBehaviour
             if(tagName == "LeftLa")
             {
                 statusLeft = true;
+                leftGrabScpt.trackPosition = false;
             }
             if(tagName == "RightLa")
             {
                 statusRight = true;
+                rightGrabScpt.trackPosition = false;
             }
             if(tagName == "CamTool")
             {   
                 statusCam = true;
+                camGrabScpt.trackPosition = false;
+                
                 CamToolGameObj.localPosition = CamPosTarget.position;
                 CamToolGameObj.localRotation = CamPosTarget.rotation;
             }
