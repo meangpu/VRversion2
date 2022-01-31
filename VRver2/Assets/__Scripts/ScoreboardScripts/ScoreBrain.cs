@@ -14,6 +14,8 @@ public class ScoreBrain : MonoBehaviour
         SaveScores(savedScores);
     }
 
+    // เช่นจะเพิ่มชื่อเป็นคะแนนแทน
+    // scoreBoardBrain.AddNewSave(System.DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss"), score);
 
     public void AddNewSave(string playerName, int score)
     {
