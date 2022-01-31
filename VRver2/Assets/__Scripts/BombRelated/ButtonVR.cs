@@ -25,12 +25,17 @@ public class ButtonVR : MonoBehaviour
             {
                 QuestManager.Instance.finishQuestByName("Button");
                 FindObjectOfType<AudioManager>().Play("BombButtonRight");
-                
+
                 GameManager.Instance.UpdateGameState(GameState.Wingame);
 
             }
             else
             {
+                Timer[] allTimer = FindObjectsOfType<Timer>();
+                foreach (Timer t in allTimer)
+                {
+                    t.subtractTime(5f);
+                }
                 FindObjectOfType<AudioManager>().Play("BombButtonWrong");
             }
 

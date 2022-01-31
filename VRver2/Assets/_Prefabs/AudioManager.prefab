@@ -84,3 +84,11 @@ MonoBehaviour:
     blend: 0
     loop: 0
     source: {fileID: 0}
+  - audioName: Lose
+    clip: {fileID: 8300000, guid: 05914b3ccf6a7a943b527d855d6e5416, type: 3}
+    mixerGroup: {fileID: -5041607224030255779, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.8
+    pitch: 1
+    blend: 0
+    loop: 0
+    source: {fileID: 0}

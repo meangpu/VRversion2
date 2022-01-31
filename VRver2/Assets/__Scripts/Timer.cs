@@ -51,15 +51,26 @@ public class Timer : MonoBehaviour
     {
         if (startCountdown)
         {     
-            if (_timeNow > 0)
+            if (_timeNow <= 0)
+            {
+                GameManager.Instance.UpdateGameState(GameState.Losegame);
+                
+            }
+            else
             {
                 _timeNow -= Time.deltaTime;
                 DisplayTime(_timeNow);
             }
-            else
-            {
-                GameManager.Instance.UpdateGameState(GameState.Losegame);
-            }
+
+        }
+    }
+
+    public void subtractTime(float value)
+    {
+        _timeNow -= value;
+        if(_timeNow <= 0)
+        {
+            _timeNow = 0;
         }
     }
 
@@ -80,6 +91,7 @@ public class Timer : MonoBehaviour
         if (timeSec <= 0)
         {
             timeSec = 0;
+            textTime.SetText("00:00");
         }
         float min = Mathf.FloorToInt(timeSec / 60);
         float sec = Mathf.FloorToInt(timeSec % 60);

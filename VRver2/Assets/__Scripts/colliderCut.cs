@@ -40,6 +40,13 @@ public class colliderCut : MonoBehaviour
 						if(nowRope.gameObject.tag != wantWireNameTag)
 						{
 							FindObjectOfType<AudioManager>().Play("BombButtonWrong");
+							
+							Timer[] allTimer = FindObjectsOfType<Timer>();
+							foreach (Timer t in allTimer)
+							{
+								t.subtractTime(5f);
+							}
+
 							return;
 						}
 						else

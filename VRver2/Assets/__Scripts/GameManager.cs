@@ -54,9 +54,9 @@ public class GameManager : MonoBehaviour
             case GameState.Playing:
                 break;
             case GameState.Wingame:
-                Debug.Log("PlayerWining");
                 break;
             case GameState.Losegame:
+                DoLoseGame();
                 break;
             case GameState.Pause:
                 break;
@@ -80,8 +80,15 @@ public class GameManager : MonoBehaviour
         winPanel.SetActive(true);
         scoreWinText.SetText(score.ToString());
         AudioManager.instance.StopAllSound();
-        AudioManager.instance.Play("Wining");
         AudioManager.instance.Play("BombButtonRight");
+        AudioManager.instance.Play("Wining");
+    }
+
+    public void DoLoseGame()
+    {
+        losePanel.SetActive(true);
+        AudioManager.instance.StopAllSound();
+        AudioManager.instance.Play("Lose");
     }
 
 }

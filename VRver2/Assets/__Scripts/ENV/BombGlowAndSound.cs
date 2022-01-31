@@ -44,6 +44,12 @@ public class BombGlowAndSound : MonoBehaviour
                 changeToGreenMat();
             }
 
+            else if(state == GameState.Losegame)
+            {
+                isRed = false;
+                meshRender.material = redGlow;
+            }
+
 
 
         }

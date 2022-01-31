@@ -77,13 +77,10 @@ public class AudioManager : MonoBehaviour
         allAudioSources = FindObjectsOfType<AudioSource>();
         foreach (AudioSource aud in allAudioSources)
         {
-            Debug.Log(aud);
             aud.Stop();
         }
     }
     
-
-
 
 
 }
