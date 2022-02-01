@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 using System;
 using TMPro;
 
@@ -22,6 +23,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject winPanel;
     [SerializeField] GameObject losePanel;
     [SerializeField] ScoreBrain scoreBoardBrain;
+    [Header("Lock Player")]
+    [SerializeField] TeleportController teleScpt;
+    [SerializeField] ContinuousMovement ConScpt;
+    [SerializeField] SnapTurnProviderBase snapTurnScpt;
+
 
 
 
@@ -74,6 +80,7 @@ public class GameManager : MonoBehaviour
         UpdateGameState(GameState.Playing);
         AudioManager.instance.StopAllSound();
         AudioManager.instance.Play("level1");
+        LockPlayer();
     }
 
     public void DoWingame(int score)
@@ -91,6 +98,13 @@ public class GameManager : MonoBehaviour
         losePanel.SetActive(true);
         AudioManager.instance.StopAllSound();
         AudioManager.instance.Play("Lose");
+    }
+
+    public void LockPlayer()
+    {
+        teleScpt.enabled = false;
+        ConScpt.enabled = false;
+        snapTurnScpt.enabled = false;
     }
 
 }

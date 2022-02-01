@@ -19,6 +19,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] TMP_Text wordLeft;
     [SerializeField] XRGrabInteractable leftGrabScpt;
     [SerializeField] Rigidbody leftRb;
+    [SerializeField] Collider leftCol;
     public bool statusLeft;
 
     [Header("Cam")]
@@ -26,6 +27,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] TMP_Text wordCam;
     [SerializeField] XRGrabInteractable camGrabScpt;
     [SerializeField] Rigidbody camRb;
+    [SerializeField] Collider camCol;
     public bool statusCam;
 
     [Header("Right")]
@@ -33,6 +35,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] TMP_Text wordRight;
     [SerializeField] XRGrabInteractable rightGrabScpt;
     [SerializeField] Rigidbody rightRb;
+    [SerializeField] Collider rightCol;
     public bool statusRight;
 
     [Header("start")]
@@ -80,19 +83,19 @@ public class ToolStatusManager : MonoBehaviour
             if(tagName == "LeftLa")
             {
                 statusLeft = true;
-                StartCoroutine(doLockTools(leftRb, leftGrabScpt));
+                StartCoroutine(doLockTools(leftRb, leftGrabScpt, leftCol));
 
             }
             if(tagName == "RightLa")
             {
                 statusRight = true;
-                StartCoroutine(doLockTools(rightRb, rightGrabScpt));
+                StartCoroutine(doLockTools(rightRb, rightGrabScpt, rightCol));
 
             }
             if(tagName == "CamTool")
             {   
                 statusCam = true;
-                StartCoroutine(doLockTools(camRb, camGrabScpt));
+                StartCoroutine(doLockTools(camRb, camGrabScpt, camCol));
 
 
                 CamToolGameObj.localPosition = CamPosTarget.position;
@@ -115,11 +118,12 @@ public class ToolStatusManager : MonoBehaviour
     }
 
 
-    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, float wait=0.6f)
+    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, float wait=0.6f)
     {
         yield return new WaitForSeconds(wait);
         _xrGrab.trackPosition = false;
         _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+        _col.isTrigger = true;
         
 
     }
