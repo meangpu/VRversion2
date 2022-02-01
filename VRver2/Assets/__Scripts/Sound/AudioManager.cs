@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     private AudioSource[] allAudioSources;
+    public bool mainThemeIsplaying;
 
     private void Awake() 
     {
@@ -74,6 +75,7 @@ public class AudioManager : MonoBehaviour
 
     public void StopAllSound()
     {
+        mainThemeIsplaying = false;
         allAudioSources = FindObjectsOfType<AudioSource>();
         foreach (AudioSource aud in allAudioSources)
         {
