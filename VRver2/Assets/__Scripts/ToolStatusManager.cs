@@ -20,6 +20,8 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] XRGrabInteractable leftGrabScpt;
     [SerializeField] Rigidbody leftRb;
     [SerializeField] Collider leftCol;
+    [SerializeField] Vector3 leftLockPos = new Vector3(-9.90631008f,0.216194f,0.750360072f);
+
     public bool statusLeft;
 
     [Header("Cam")]
@@ -28,6 +30,8 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] XRGrabInteractable camGrabScpt;
     [SerializeField] Rigidbody camRb;
     [SerializeField] Collider camCol;
+    [SerializeField] Vector3 camLockPos = new Vector3(-10.0082293f,0.146715209f,0.936999917f);
+
     public bool statusCam;
 
     [Header("Right")]
@@ -36,6 +40,8 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] XRGrabInteractable rightGrabScpt;
     [SerializeField] Rigidbody rightRb;
     [SerializeField] Collider rightCol;
+    [SerializeField] Vector3 rightLockPos = new Vector3(-9.90631008f,0.213794619f,1.10723996f);
+
     public bool statusRight;
 
     [Header("start")]
@@ -83,19 +89,19 @@ public class ToolStatusManager : MonoBehaviour
             if(tagName == "LeftLa")
             {
                 statusLeft = true;
-                StartCoroutine(doLockTools(leftRb, leftGrabScpt, leftCol));
+                StartCoroutine(doLockTools(leftRb, leftGrabScpt, leftCol, leftLockPos));
 
             }
             if(tagName == "RightLa")
             {
                 statusRight = true;
-                StartCoroutine(doLockTools(rightRb, rightGrabScpt, rightCol));
+                StartCoroutine(doLockTools(rightRb, rightGrabScpt, rightCol, rightLockPos));
 
             }
             if(tagName == "CamTool")
             {   
                 statusCam = true;
-                StartCoroutine(doLockTools(camRb, camGrabScpt, camCol));
+                StartCoroutine(doLockTools(camRb, camGrabScpt, camCol, camLockPos));
 
 
                 CamToolGameObj.localPosition = CamPosTarget.position;
@@ -118,12 +124,13 @@ public class ToolStatusManager : MonoBehaviour
     }
 
 
-    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, float wait=0.6f)
+    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, float wait=0.6f)
     {
         yield return new WaitForSeconds(wait);
         _xrGrab.trackPosition = false;
         _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
-        _col.isTrigger = true;
+        _col.isTrigger = true; // fix this pls
+        _col.transform.position = _fixPos;
         
 
     }
