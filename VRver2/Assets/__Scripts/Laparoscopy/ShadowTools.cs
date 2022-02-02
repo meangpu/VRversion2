@@ -33,14 +33,36 @@ public class ShadowTools : MonoBehaviour
 
     public void saveRotation()
     {
-        leftRot = leftTool.rotation.eulerAngles;
-        camRot = camTool.rotation.eulerAngles;
-        righRot = rightTool.rotation.eulerAngles;
+        // leftRot = leftTool.rotation.eulerAngles;
+        // camRot = camTool.rotation.eulerAngles;
+        // righRot = rightTool.rotation.eulerAngles;
+
+        ResetAllRot();
 
 
         // parentLeft.eulerAngles = leftRot;
         // parentRight.eulerAngles = camRot;
         // parentRight.eulerAngles = righRot;
+    }
+
+
+    public void ResetAllRot()
+    {
+        leftRot = Vector3.zero;
+        camRot = Vector3.zero;
+        righRot = Vector3.zero;
+
+        foreach (Transform cLeft in childLeft)
+        {
+            cLeft.eulerAngles = Vector3.zero;
+        }
+
+        foreach (Transform cRight in childRight)
+        {
+            cRight.eulerAngles = Vector3.zero;
+        }
+
+
     }
 
     public void doStartClamp()
