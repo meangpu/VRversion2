@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 35420310}
   - component: {fileID: 6823908377140852481}
   - component: {fileID: 7791546157783330605}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Obi Rope (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 170310539}
   - component: {fileID: 1816211912150397124}
   - component: {fileID: 2146085866485226432}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Obi Rope (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 911679125}
   - component: {fileID: 3564604645537777988}
   - component: {fileID: 8842747016766443961}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Obi Solver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 1778456658}
   - component: {fileID: 3450848537711993474}
   - component: {fileID: 8081541040075013350}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Obi Rope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 2128623361}
   - component: {fileID: 3773471625574686600}
   - component: {fileID: 7677766956029192101}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Obi Rope (2)
   m_TagString: CorrectWire
   m_Icon: {fileID: 0}
