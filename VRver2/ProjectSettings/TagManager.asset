@@ -23,7 +23,7 @@ TagManager:
   - Ground
   - Body
   - NotCollide
-  - CAM2
+  - 
   - bombNotCollideWithGrab
   - Fuse
   - CamInTool
