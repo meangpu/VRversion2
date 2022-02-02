@@ -48,20 +48,20 @@ public class ShadowTools : MonoBehaviour
 
     public void ResetAllRot()
     {
-        Vector3 rewset =  new Vector3(0, 180, 0);
-        leftRot = rewset;
-        camRot = rewset;
-        righRot = rewset;
+        // Vector3 rewset =  new Vector3(0, 180, 0);
+        // leftRot = rewset;
+        // camRot = rewset;
+        // righRot = rewset;
 
-        foreach (Transform cLeft in childLeft)
-        {
-            cLeft.eulerAngles = rewset;
-        }
+        // foreach (Transform cLeft in childLeft)
+        // {
+        //     cLeft.eulerAngles = rewset;
+        // }
 
-        foreach (Transform cRight in childRight)
-        {
-            cRight.eulerAngles = rewset;
-        }
+        // foreach (Transform cRight in childRight)
+        // {
+        //     cRight.eulerAngles = rewset;
+        // }
 
 
     }
@@ -89,21 +89,21 @@ public class ShadowTools : MonoBehaviour
             Vector3 targetLeftAngle = new Vector3
                 (
                     Mathf.Clamp(leftParent.x, leftRot.x - leftClampVal.x, leftRot.x + leftClampVal.x),
-                    Mathf.Clamp(leftParent.y, leftRot.y - leftClampVal.y, leftRot.y + leftClampVal.y),
+                    Mathf.Clamp(leftParent.y, leftRot.y - leftClampVal.y, leftRot.y + leftClampVal.y) + 180,
                     Mathf.Clamp(leftParent.z, leftRot.z - leftClampVal.z, leftRot.z + leftClampVal.z)
                 );
 
             Vector3 targetCamAngle = new Vector3
                 (
                     Mathf.Clamp(camParent.x, camRot.x - camClampVal.x, camRot.x + camClampVal.x),
-                    Mathf.Clamp(camParent.y, camRot.y - camClampVal.y, camRot.y + camClampVal.y),
+                    Mathf.Clamp(camParent.y, camRot.y - camClampVal.y, camRot.y + camClampVal.y) + 180,
                     Mathf.Clamp(camParent.z, camRot.z - camClampVal.z, camRot.z + camClampVal.z)
                 );
 
             Vector3 targetRightAngle = new Vector3
                 (
                     Mathf.Clamp(rightParent.x, righRot.x - rightClampVal.x, righRot.x + rightClampVal.x),
-                    Mathf.Clamp(rightParent.y, righRot.y - rightClampVal.y, righRot.y + rightClampVal.y),
+                    Mathf.Clamp(rightParent.y, righRot.y - rightClampVal.y, righRot.y + rightClampVal.y) + 180,
                     Mathf.Clamp(rightParent.z, righRot.z - rightClampVal.z, righRot.z + rightClampVal.z)
                 );
 
