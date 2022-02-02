@@ -19,6 +19,7 @@ public class ClampLock : MonoBehaviour
 
     public void saveRotation()
     {
+        Debug.Log("YYYYYYYYYYYYYYYYY");
         leftRot = leftT.rotation.eulerAngles;
         camRot = camT.rotation.eulerAngles;
         righRot = rightT.rotation.eulerAngles;
@@ -26,6 +27,7 @@ public class ClampLock : MonoBehaviour
 
     public void doStartClamp()
     {
+        Debug.Log("STARTCLAMPPPPPPPPPPPPP");
         startClamp = true;
         saveRotation();
     }

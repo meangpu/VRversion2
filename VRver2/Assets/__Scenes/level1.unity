@@ -707,9 +707,9 @@ MonoBehaviour:
   leftT: {fileID: 81270166}
   camT: {fileID: 398806758}
   rightT: {fileID: 1133530698}
-  leftClampVal: {x: 10, y: 10, z: 20}
-  camClampVal: {x: 10, y: 10, z: 20}
-  rightClampVal: {x: 10, y: 10, z: 20}
+  leftClampVal: {x: 40, y: 40, z: 20}
+  camClampVal: {x: 40, y: 40, z: 20}
+  rightClampVal: {x: 40, y: 40, z: 20}
   startClamp: 0
 --- !u!4 &81270166 stripped
 Transform:
