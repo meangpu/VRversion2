@@ -5,15 +5,18 @@ public class ShadowTools : MonoBehaviour
 
     [Header("Parent")]
     [SerializeField] Transform parentLeft;
+    [SerializeField] Transform parentCam;
     [SerializeField] Transform parentRight;
 
     [Header("MainTools")]
     [SerializeField] Transform leftTool;
+    [SerializeField] Transform camTool;
     [SerializeField] Transform rightTool;
 
     
     [Header("Child")]
     [SerializeField] Transform[] childLeft;
+    [SerializeField] Transform childCam;
     [SerializeField] Transform[] childRight;
 
 
@@ -31,10 +34,12 @@ public class ShadowTools : MonoBehaviour
     public void saveRotation()
     {
         leftRot = leftTool.rotation.eulerAngles;
+        camRot = camTool.rotation.eulerAngles;
         righRot = rightTool.rotation.eulerAngles;
 
 
         parentLeft.eulerAngles = leftRot;
+        parentRight.eulerAngles = camRot;
         parentRight.eulerAngles = righRot;
     }
 
@@ -55,6 +60,7 @@ public class ShadowTools : MonoBehaviour
         else
         {
             Vector3 leftParent = parentLeft.rotation.eulerAngles;
+            Vector3 camParent = parentCam.rotation.eulerAngles;
             Vector3 rightParent = parentRight.rotation.eulerAngles;
 
             Vector3 targetLeftAngle = new Vector3
@@ -64,12 +70,23 @@ public class ShadowTools : MonoBehaviour
                     Mathf.Clamp(leftParent.z, leftRot.z - leftClampVal.z, leftRot.z + leftClampVal.z)
                 );
 
+            Vector3 targetCamAngle = new Vector3
+                (
+                    Mathf.Clamp(camParent.x, camRot.x - camClampVal.x, camRot.x + camClampVal.x),
+                    Mathf.Clamp(camParent.y, camRot.y - camClampVal.y, camRot.y + camClampVal.y),
+                    Mathf.Clamp(camParent.z, camRot.z - camClampVal.z, camRot.z + camClampVal.z)
+                );
+
             Vector3 targetRightAngle = new Vector3
                 (
                     Mathf.Clamp(rightParent.x, righRot.x - rightClampVal.x, righRot.x + rightClampVal.x),
                     Mathf.Clamp(rightParent.y, righRot.y - rightClampVal.y, righRot.y + rightClampVal.y),
                     Mathf.Clamp(rightParent.z, righRot.z - rightClampVal.z, righRot.z + rightClampVal.z)
                 );
+
+            
+            
+            childCam.eulerAngles = targetCamAngle;
 
             foreach (Transform cLeft in childLeft)
             {
