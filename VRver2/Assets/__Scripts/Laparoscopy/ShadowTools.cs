@@ -48,18 +48,19 @@ public class ShadowTools : MonoBehaviour
 
     public void ResetAllRot()
     {
-        leftRot = Vector3.zero;
-        camRot = Vector3.zero;
-        righRot = Vector3.zero;
+        Vector3 rewset =  new Vector3(0, 180, 0);
+        leftRot = rewset;
+        camRot = rewset;
+        righRot = rewset;
 
         foreach (Transform cLeft in childLeft)
         {
-            cLeft.eulerAngles = Vector3.zero;
+            cLeft.eulerAngles = rewset;
         }
 
         foreach (Transform cRight in childRight)
         {
-            cRight.eulerAngles = Vector3.zero;
+            cRight.eulerAngles = rewset;
         }
 
 
