@@ -45,7 +45,7 @@ public class ToolStatusManager : MonoBehaviour
     public bool statusRight;
 
     [Header("bomb")]
-    [SerializeField] Collider bombCol;
+    [SerializeField] Collider[] bombCol;
 
     [Header("start")]
     [SerializeField] Button startGameBtn;
@@ -119,7 +119,10 @@ public class ToolStatusManager : MonoBehaviour
         if (statusLeft && statusCam && statusRight)
         {
             startGameBtn.interactable = true;
-            bombCol.isTrigger = false;
+            foreach (Collider col in bombCol)
+            {
+                col.isTrigger = false;
+            }
         }
         else
         {
