@@ -10,7 +10,7 @@ public class ShadowTools : MonoBehaviour
     [SerializeField] Transform childRight;
 
 
-    private void FixedUpdate() 
+    private void Update() 
     {
         Vector3 leftParent = parentLeft.rotation.eulerAngles;
         Vector3 rightParent = parentRight.rotation.eulerAngles;
