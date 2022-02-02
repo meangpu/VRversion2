@@ -15,7 +15,7 @@ public class Scoreboard : MonoBehaviour
     private string SavePath => $"{Application.persistentDataPath}/{levelName}.json";
 
     private void Start(){
-        print(SavePath);
+        // print(SavePath);
         ScoreboardSaveData savedScores = GetSavedScores();
         UpdateUI(savedScores);
         SaveScores(savedScores);

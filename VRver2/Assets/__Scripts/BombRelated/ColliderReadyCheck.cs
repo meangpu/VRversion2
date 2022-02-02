@@ -12,7 +12,6 @@ public class ColliderReadyCheck : MonoBehaviour
         
         if (other.gameObject.tag != "LeftLa" && other.gameObject.tag != "RightLa" && other.gameObject.tag != "CamTool" )
         {
-            Debug.Log(other.gameObject.tag);
             return;
         }
         else

@@ -9,7 +9,7 @@ public class ScoreBrain : MonoBehaviour
 
     private void Start()
     {
-        print(SavePath);
+        // print(SavePath);
         ScoreboardSaveData savedScores = GetSavedScores();
         SaveScores(savedScores);
     }
