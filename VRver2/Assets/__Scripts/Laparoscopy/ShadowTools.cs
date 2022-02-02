@@ -17,7 +17,11 @@ public class ShadowTools : MonoBehaviour
         
         childLeft.eulerAngles = leftParent;
         childRight.eulerAngles = rightParent;
-
-
     }
+
+
+
+
+
+    
 }

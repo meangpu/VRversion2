@@ -106,11 +106,15 @@ public class SettingSlider : MonoBehaviour
 
     public void LoadAllSavedValue()
     {
-        // eye part
-        float oldEyeValue = PlayerPrefs.GetFloat("EyeLevel");
-        Vector3 newH = new Vector3(eyeTrans.localPosition.x, oldEyeValue, eyeTrans.localPosition.z);
-        eyeTrans.localPosition = newH;
 
+        // eye part
+        float oldEyeValue = 0;
+        if (PlayerPrefs.HasKey("EyeLevel"))
+        {
+            oldEyeValue = PlayerPrefs.GetFloat("EyeLevel");
+            Vector3 newH = new Vector3(eyeTrans.localPosition.x, oldEyeValue, eyeTrans.localPosition.z);
+            eyeTrans.localPosition = newH;
+        }
 
         if (eyeText != null)
         {
@@ -119,9 +123,22 @@ public class SettingSlider : MonoBehaviour
         }
 
         // sound part
-        float saved_Master = PlayerPrefs.GetFloat("SoundMaster");
-        float saved_SFX = PlayerPrefs.GetFloat("SoundSFX");
-        float saved_BG = PlayerPrefs.GetFloat("SoundBG");
+        float saved_Master = 5f;
+        float saved_SFX = 5f;
+        float saved_BG = 5f;
+
+        if (PlayerPrefs.HasKey("SoundMaster"))
+        {
+            saved_Master = PlayerPrefs.GetFloat("SoundMaster");
+        }
+        if (PlayerPrefs.HasKey("SoundSFX"))
+        {
+            saved_SFX = PlayerPrefs.GetFloat("SoundSFX");
+        }
+        if (PlayerPrefs.HasKey("SoundBG"))
+        {
+            saved_BG = PlayerPrefs.GetFloat("SoundBG");
+        }
 
         masterVolSlider.value = saved_Master;
         sfxVolSlider.value = saved_SFX;

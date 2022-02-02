@@ -44,6 +44,9 @@ public class ToolStatusManager : MonoBehaviour
 
     public bool statusRight;
 
+    [Header("bomb")]
+    [SerializeField] Collider bombCol;
+
     [Header("start")]
     [SerializeField] Button startGameBtn;
     [Header("CamSetting")]
@@ -116,6 +119,7 @@ public class ToolStatusManager : MonoBehaviour
         if (statusLeft && statusCam && statusRight)
         {
             startGameBtn.interactable = true;
+            bombCol.isTrigger = false;
         }
         else
         {
@@ -129,7 +133,7 @@ public class ToolStatusManager : MonoBehaviour
         yield return new WaitForSeconds(wait);
         _xrGrab.trackPosition = false;
         _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
-        _col.isTrigger = true; // fix this pls
+        // _col.isTrigger = true; // fix this pls
         _col.transform.position = _fixPos;
         
 
