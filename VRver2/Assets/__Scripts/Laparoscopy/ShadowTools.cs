@@ -69,6 +69,23 @@ public class ShadowTools : MonoBehaviour
         startClamp = true;
     }
 
+    public static float ClampAngle(float angle, float min, float max) 
+    {
+        float start = (min + max) * 0.5f - 180;
+        float floor = Mathf.FloorToInt((angle - start) / 360) * 360;
+        min += floor;
+        max += floor;
+        return Mathf.Clamp(angle, min, max);
+    }
+
+    public float rotCanNegative(float _angle)
+    {
+        if(_angle >= 180)
+        {
+            _angle -= 360;
+        }
+        return _angle % 360;
+    }
 
     private void Update() 
     {
@@ -104,6 +121,27 @@ public class ShadowTools : MonoBehaviour
             //         Mathf.Clamp(rightParent.z, righRot.z - rightClampVal.z, righRot.z + rightClampVal.z)
             //     );
 
+            Vector3 targetLeftAngle = new Vector3
+                (
+                    ClampAngle(leftParent.x, leftRot.x - leftClampVal.x, leftRot.x + leftClampVal.x),
+                    ClampAngle(leftParent.y, leftRot.y - leftClampVal.y, leftRot.y + leftClampVal.y),
+                    ClampAngle(leftParent.z, leftRot.z - leftClampVal.z, leftRot.z + leftClampVal.z)
+                );
+
+            Vector3 targetCamAngle = new Vector3
+                (
+                    ClampAngle(camParent.x, camRot.x - camClampVal.x, camRot.x + camClampVal.x),
+                    ClampAngle(camParent.y, camRot.y - camClampVal.y, camRot.y + camClampVal.y),
+                    ClampAngle(camParent.z, camRot.z - camClampVal.z, camRot.z + camClampVal.z)
+                );
+
+            Vector3 targetRightAngle = new Vector3
+                (
+                    ClampAngle(rightParent.x, righRot.x - rightClampVal.x, righRot.x + rightClampVal.x),
+                    ClampAngle(rightParent.y, righRot.y - rightClampVal.y, righRot.y + rightClampVal.y),
+                    ClampAngle(rightParent.z, righRot.z - rightClampVal.z, righRot.z + rightClampVal.z)
+                );
+
             
 
             // childCam.eulerAngles = targetCamAngle;
@@ -111,13 +149,21 @@ public class ShadowTools : MonoBehaviour
             foreach (Transform cLeft in childLeft)
             {
                 // cLeft.eulerAngles = targetLeftAngle;
-                cLeft.eulerAngles = leftParent;
+                // cLeft.eulerAngles = leftParent;
+
+                cLeft.rotation = Quaternion.Euler(targetLeftAngle);
+
+
             }
 
             foreach (Transform cRight in childRight)
             {
                 // cRight.eulerAngles = targetRightAngle;
-                cRight.eulerAngles = rightParent;
+                // cRight.eulerAngles = rightParent;
+
+                cRight.rotation = Quaternion.Euler(targetRightAngle);
+
+
             }
 
 

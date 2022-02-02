@@ -20,7 +20,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] XRGrabInteractable leftGrabScpt;
     [SerializeField] Rigidbody leftRb;
     [SerializeField] Collider leftCol;
-    [SerializeField] Vector3 leftLockPos = new Vector3(-9.90631008f,0.216194f,0.750360072f);
+    [SerializeField] Vector3 leftLockPos = new Vector3(4.64131021f,0.216253251f,1.12363994f);
     [SerializeField] GameObject leftNewParent;
 
 
@@ -32,7 +32,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] XRGrabInteractable camGrabScpt;
     [SerializeField] Rigidbody camRb;
     [SerializeField] Collider camCol;
-    [SerializeField] Vector3 camLockPos = new Vector3(-10.0082293f,0.146715209f,0.936999917f);
+    [SerializeField] Vector3 camLockPos = new Vector3(4.74322939f,0.146999836f,0.936999977f);
     [SerializeField] GameObject camNewParent;
 
     public bool statusCam;
@@ -43,7 +43,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] XRGrabInteractable rightGrabScpt;
     [SerializeField] Rigidbody rightRb;
     [SerializeField] Collider rightCol;
-    [SerializeField] Vector3 rightLockPos = new Vector3(-9.90631008f,0.213794619f,1.10723996f);
+    [SerializeField] Vector3 rightLockPos = new Vector3(4.64130974f,0.213823989f,0.766759992f);
     [SerializeField] GameObject rightNewParent;
 
     public bool statusRight;
@@ -142,8 +142,9 @@ public class ToolStatusManager : MonoBehaviour
         _xrGrab.trackPosition = false;
         _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
         // ปิด collider เก่า 
-        _col.isTrigger = true; // fix this pls
-        _col.transform.position = _fixPos;
+        _col.isTrigger = true; 
+
+        _col.transform.position = _fixPos; 
         
 
         // เปิดตัวแม่ใหม่ 
