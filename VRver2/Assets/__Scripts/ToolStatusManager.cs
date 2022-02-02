@@ -138,6 +138,8 @@ public class ToolStatusManager : MonoBehaviour
         _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
         // _col.isTrigger = true; // fix this pls
         _col.transform.position = _fixPos;
+
+        _xrGrab.trackPosition = false;
         
 
     }
