@@ -1660,6 +1660,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 175335716311908580, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: level2
+      objectReference: {fileID: 0}
     - target: {fileID: 611599469471669848, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1679,6 +1683,10 @@ PrefabInstance:
     - target: {fileID: 1425519196990399152, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230837398928624862, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_Value
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 2441051082066846034, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_RootOrder
@@ -1756,9 +1764,13 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1565623579}
+    - target: {fileID: 3114422268144576332, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_text
+      value: LEVEL2
+      objectReference: {fileID: 0}
     - target: {fileID: 3591599109049977451, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 3591599109049977451, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1798,7 +1810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3937775147665637201, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 3937775147665637201, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1806,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3937775147665637201, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 4041647315999258896, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1880,6 +1892,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5964966856202678072, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_text
+      value: New level with harder bomb, need more skill to defuse
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964966856202678072, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_fontSize
+      value: 24.15
+      objectReference: {fileID: 0}
     - target: {fileID: 5988821681209617283, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: allClose.Array.size
       value: 0
@@ -1928,6 +1948,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7611347692801881323, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.36470592
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611347692801881323, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7611347692801881323, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.84472847
+      objectReference: {fileID: 0}
     - target: {fileID: 7668704032436740137, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1960,6 +1992,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8613557099656684563, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 94fa190efe3841f4c9376d0a99568419, type: 3}
     - target: {fileID: 8688209747081042741, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
       propertyPath: m_text
       value: 2
