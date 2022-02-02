@@ -30,7 +30,7 @@ public class ClampLock : MonoBehaviour
         saveRotation();
     }
 
-    private void FixedUpdate() 
+    private void Update() 
     {
         if(!startClamp)
         {
