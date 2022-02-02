@@ -22,6 +22,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] Collider leftCol;
     [SerializeField] Vector3 leftLockPos = new Vector3(4.64131021f,0.216253251f,1.12363994f);
     [SerializeField] GameObject leftNewParent;
+    [SerializeField] Collider[] leftAllChildCol;
 
 
     public bool statusLeft;
@@ -34,6 +35,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] Collider camCol;
     [SerializeField] Vector3 camLockPos = new Vector3(4.74322939f,0.146999836f,0.936999977f);
     [SerializeField] GameObject camNewParent;
+    [SerializeField] Collider[] camAllChildCol;
 
     public bool statusCam;
 
@@ -45,6 +47,7 @@ public class ToolStatusManager : MonoBehaviour
     [SerializeField] Collider rightCol;
     [SerializeField] Vector3 rightLockPos = new Vector3(4.64130974f,0.213823989f,0.766759992f);
     [SerializeField] GameObject rightNewParent;
+    [SerializeField] Collider[] rightAllChildCol;
 
     public bool statusRight;
 
@@ -96,19 +99,19 @@ public class ToolStatusManager : MonoBehaviour
             if(tagName == "LeftLa")
             {
                 statusLeft = true;
-                StartCoroutine(doLockTools(leftRb, leftGrabScpt, leftCol, leftLockPos, leftNewParent));
+                StartCoroutine(doLockTools(leftRb, leftGrabScpt, leftCol, leftLockPos, leftNewParent, leftAllChildCol));
 
             }
             if(tagName == "RightLa")
             {
                 statusRight = true;
-                StartCoroutine(doLockTools(rightRb, rightGrabScpt, rightCol, rightLockPos, rightNewParent));
+                StartCoroutine(doLockTools(rightRb, rightGrabScpt, rightCol, rightLockPos, rightNewParent, rightAllChildCol));
 
             }
             if(tagName == "CamTool")
             {   
                 statusCam = true;
-                StartCoroutine(doLockTools(camRb, camGrabScpt, camCol, camLockPos, camNewParent));
+                StartCoroutine(doLockTools(camRb, camGrabScpt, camCol, camLockPos, camNewParent, camAllChildCol));
 
 
                 CamToolGameObj.localPosition = CamPosTarget.position;
@@ -135,7 +138,7 @@ public class ToolStatusManager : MonoBehaviour
     }
 
 
-    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, GameObject _newPar, float wait=0.6f)
+    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, GameObject _newPar, Collider[] _disChild, float wait=0.6f)
     {
         yield return new WaitForSeconds(wait);
         _xrGrab.trackPosition = false;
@@ -143,6 +146,11 @@ public class ToolStatusManager : MonoBehaviour
         _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
         // ปิด collider เก่า 
         _col.isTrigger = true; 
+
+        foreach (Collider child in _disChild)
+        {
+            child.isTrigger = true;
+        }
 
         _col.transform.position = _fixPos; 
         
