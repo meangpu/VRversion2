@@ -27,6 +27,7 @@ public class ClampLock : MonoBehaviour
     public void doStartClamp()
     {
         startClamp = true;
+        saveRotation();
     }
 
     private void FixedUpdate() 
