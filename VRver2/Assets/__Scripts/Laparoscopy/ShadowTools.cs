@@ -38,9 +38,9 @@ public class ShadowTools : MonoBehaviour
         righRot = rightTool.rotation.eulerAngles;
 
 
-        parentLeft.eulerAngles = leftRot;
-        parentRight.eulerAngles = camRot;
-        parentRight.eulerAngles = righRot;
+        // parentLeft.eulerAngles = leftRot;
+        // parentRight.eulerAngles = camRot;
+        // parentRight.eulerAngles = righRot;
     }
 
     public void doStartClamp()
