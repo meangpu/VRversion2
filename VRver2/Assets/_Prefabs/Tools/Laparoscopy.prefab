@@ -2329,7 +2329,7 @@ GameObject:
   - component: {fileID: 468874949002491593}
   - component: {fileID: 1713070603688200620}
   - component: {fileID: 5991271573580464753}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: colliderCheck
   m_TagString: CutCollider
   m_Icon: {fileID: 0}

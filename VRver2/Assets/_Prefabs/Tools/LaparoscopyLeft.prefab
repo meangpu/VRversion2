@@ -25,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 430936213163102125}
     - target: {fileID: 1713070603688200620, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1724411519891855606, guid: 5ab1ecbcadb0fa34b83d0f6570f3fb16, type: 3}
       propertyPath: m_LocalRotation.w
