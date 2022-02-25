@@ -3,7 +3,47 @@ guid: 68a9543a62845044f86803cac6c949c8
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinet
+    second: {fileID: 2100000, guid: 47abc5a3198474b4ea03bbddc2895375, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chisel
+    second: {fileID: 2100000, guid: f9fcca1147ad870439b18f863867706b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hammer
+    second: {fileID: 2100000, guid: 4c7eb73c4dc56564e926fce997517445, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandAxe
+    second: {fileID: 2100000, guid: 0444d10ee8022744f8f0c855919d14a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandDrill
+    second: {fileID: 2100000, guid: b18fdadb72ce24b448244b8d4b2ab97d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mallet
+    second: {fileID: 2100000, guid: 4da8aad22f885634eb8e70727c49dd38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Right Edge
+    second: {fileID: 2100000, guid: 3539cd5a0b6340d46a500e8a6bb18392, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Saw
+    second: {fileID: 2100000, guid: 1e8cd85b22fd07245b7958dff857ce80, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

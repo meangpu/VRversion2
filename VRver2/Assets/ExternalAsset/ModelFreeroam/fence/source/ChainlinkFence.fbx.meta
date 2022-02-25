@@ -3,7 +3,32 @@ guid: fe0d9ca14d0ebb248a61d7dec21f2592
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong5
+    second: {fileID: 2100000, guid: 49f729b4765101e4ea209dd7b1e3ebc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong6
+    second: {fileID: 2100000, guid: 873d9e93c384ba34080fe6b2fd00c5ce, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChainlinkFenceNew
+    second: {fileID: 2800000, guid: 9aacfde83f971464a93d5fd8b9cf49d9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChainlinkFenceNew_NRM
+    second: {fileID: 2800000, guid: 4901787d1ea2106408861986c1bc4a40, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SpecMaskBumpMapChainlink
+    second: {fileID: 2800000, guid: 02b3fc06d118fb5488233daef4572d1f, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

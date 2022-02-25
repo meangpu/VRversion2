@@ -3,7 +3,62 @@ guid: adf91e9b1bfb6ec469f1effa135e6372
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blanket001Mat
+    second: {fileID: 2100000, guid: 85ca6c0b751dd1b46a606e8680eb8fce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlanketMat
+    second: {fileID: 2100000, guid: 5d6c3d964518fde458d9e30f7b11a510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Karkas001Mat
+    second: {fileID: 2100000, guid: 1d9fb782419177a4f9a3ce67ba146f37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Karkas002Mat
+    second: {fileID: 2100000, guid: 56f0ac1fc4f1bf14ca2c4fd20a5cd1cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KarkasMat
+    second: {fileID: 2100000, guid: 768832f346120a7498cee14ab44b053b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Matrass001Mat
+    second: {fileID: 2100000, guid: 56cdce0daae0d9f46bc845a902befd58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Matrass002Mat
+    second: {fileID: 2100000, guid: 2308962a149b68d41b273045ff28eade, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatrassMat
+    second: {fileID: 2100000, guid: 25a91710c0961ef4dbc260a443b7afff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Podushka001Mat
+    second: {fileID: 2100000, guid: 066fe06a37e30844c8dd436690e46598, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Podushka002Mat
+    second: {fileID: 2100000, guid: daa643d1572f82b4aab8cb3509712675, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PodushkaMat
+    second: {fileID: 2100000, guid: cdfc75ebb79f897479093857a4a4b672, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
