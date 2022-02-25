@@ -100,4 +100,36 @@ MonoBehaviour:
     blend: 0
     loop: 0
     source: {fileID: 0}
+  - audioName: click
+    clip: {fileID: 8300000, guid: bb5d35b07a9b11e4c9695e334e582ea1, type: 3}
+    mixerGroup: {fileID: 3585453016504125781, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.6
+    pitch: 1
+    blend: 0
+    loop: 0
+    source: {fileID: 0}
+  - audioName: click2
+    clip: {fileID: 8300000, guid: 200af4146d44e6c4ca7a3513da88e250, type: 3}
+    mixerGroup: {fileID: 3585453016504125781, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.6
+    pitch: 1
+    blend: 0
+    loop: 0
+    source: {fileID: 0}
+  - audioName: click3
+    clip: {fileID: 8300000, guid: 0671e571c4353784dba7bcde810f24d3, type: 3}
+    mixerGroup: {fileID: 3585453016504125781, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.6
+    pitch: 1
+    blend: 0
+    loop: 0
+    source: {fileID: 0}
+  - audioName: click4
+    clip: {fileID: 8300000, guid: b636ef61e262aef41ab833646011d7f2, type: 3}
+    mixerGroup: {fileID: 3585453016504125781, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
+    volumn: 0.6
+    pitch: 1
+    blend: 0
+    loop: 0
+    source: {fileID: 0}
   mainThemeIsplaying: 0
