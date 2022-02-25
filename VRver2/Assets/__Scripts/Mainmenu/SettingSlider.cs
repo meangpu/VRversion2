@@ -23,19 +23,14 @@ public class SettingSlider : MonoBehaviour
     [SerializeField] TMP_Text masterVolText;
     [SerializeField] Slider masterVolSlider;
     
-    [SerializeField] TMP_Text sfxVolText;
-    [SerializeField] Slider sfxVolSlider;
+    // [SerializeField] TMP_Text sfxVolText;
+    // [SerializeField] Slider sfxVolSlider;
 
-    [SerializeField] TMP_Text musicVolText;
-    [SerializeField] Slider musicVolSlider;
+    // [SerializeField] TMP_Text musicVolText;
+    // [SerializeField] Slider musicVolSlider;
 
     private void Start() 
     {
-        if (ForLoadOnly)
-        {
-            LoadAllSavedValue();
-            return;
-        }
 
         if (SetALLText)
         {
@@ -55,21 +50,21 @@ public class SettingSlider : MonoBehaviour
             PlayerPrefs.SetFloat("SoundMaster", v);
         });
 
-        sfxVolSlider.onValueChanged.AddListener((v) => 
-        {
-            sfxVolText.SetText((v*10).ToString("0"));
-            mixer.SetFloat("SFX", Mathf.Log10(v)*20);
+        // sfxVolSlider.onValueChanged.AddListener((v) => 
+        // {
+        //     sfxVolText.SetText((v*10).ToString("0"));
+        //     mixer.SetFloat("SFX", Mathf.Log10(v)*20);
 
-            PlayerPrefs.SetFloat("SoundSFX", v);
-        });
+        //     PlayerPrefs.SetFloat("SoundSFX", v);
+        // });
 
-        musicVolSlider.onValueChanged.AddListener((v) => 
-        {
-            musicVolText.SetText((v*10).ToString("0"));
-            mixer.SetFloat("BG", Mathf.Log10(v)*20);
+        // musicVolSlider.onValueChanged.AddListener((v) => 
+        // {
+        //     musicVolText.SetText((v*10).ToString("0"));
+        //     mixer.SetFloat("BG", Mathf.Log10(v)*20);
 
-            PlayerPrefs.SetFloat("SoundBG", v);
-        });
+        //     PlayerPrefs.SetFloat("SoundBG", v);
+        // });
         
         
         if (LoadFromSaved)
@@ -141,16 +136,16 @@ public class SettingSlider : MonoBehaviour
         }
 
         masterVolSlider.value = saved_Master;
-        sfxVolSlider.value = saved_SFX;
-        musicVolSlider.value = saved_BG;
+        // sfxVolSlider.value = saved_SFX;
+        // musicVolSlider.value = saved_BG;
 
         masterVolText.SetText((masterVolSlider.value*10).ToString("0"));
-        sfxVolText.SetText((sfxVolSlider.value*10).ToString("0"));
-        musicVolText.SetText((musicVolSlider.value*10).ToString("0"));
+        // sfxVolText.SetText((sfxVolSlider.value*10).ToString("0"));
+        // musicVolText.SetText((musicVolSlider.value*10).ToString("0"));
 
         mixer.SetFloat("Master", Mathf.Log10(masterVolSlider.value)*20);
-        mixer.SetFloat("SFX", Mathf.Log10(sfxVolSlider.value)*20);
-        mixer.SetFloat("BG", Mathf.Log10(musicVolSlider.value)*20);
+        // mixer.SetFloat("SFX", Mathf.Log10(sfxVolSlider.value)*20);
+        // mixer.SetFloat("BG", Mathf.Log10(musicVolSlider.value)*20);
 
     }
 
@@ -159,12 +154,12 @@ public class SettingSlider : MonoBehaviour
         eyeText.SetText(eyeSlider.value.ToString("0.00"));
 
         masterVolText.SetText((masterVolSlider.value*10).ToString("0"));
-        sfxVolText.SetText((sfxVolSlider.value*10).ToString("0"));
-        musicVolText.SetText((musicVolSlider.value*10).ToString("0"));
+        // sfxVolText.SetText((sfxVolSlider.value*10).ToString("0"));
+        // musicVolText.SetText((musicVolSlider.value*10).ToString("0"));
 
         mixer.SetFloat("Master", Mathf.Log10(masterVolSlider.value)*20);
-        mixer.SetFloat("SFX", Mathf.Log10(sfxVolSlider.value)*20);
-        mixer.SetFloat("BG", Mathf.Log10(musicVolSlider.value)*20);
+        // mixer.SetFloat("SFX", Mathf.Log10(sfxVolSlider.value)*20);
+        // mixer.SetFloat("BG", Mathf.Log10(musicVolSlider.value)*20);
 
     }
 
