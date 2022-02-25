@@ -1,0 +1,2 @@
+mainBG = Camille Saint-Saëns The Elephant
+tutorial = [브금대통령] (튜토리얼경쾌Piano) Piece of Cake [무료음악브금Royalty Free Music]
