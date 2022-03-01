@@ -113,7 +113,7 @@ public class ToolStatusManager : MonoBehaviour
             {   
                 statusCam = true;
 
-                StartCoroutine(doLockTools(camRb, camGrabScpt, camCol, camLockPos, camNewParent, camAllChildCol));
+                StartCoroutine(doLockTools(camRb, camGrabScpt, camCol, camLockPos, camNewParent, camAllChildCol, 0.6f, true));
 
 
                 CamToolGameObj.localPosition = CamPosTarget.position;
@@ -140,10 +140,13 @@ public class ToolStatusManager : MonoBehaviour
     }
 
 
-    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, GameObject _newPar, Collider[] _disChild, float wait=0.6f)
+    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, GameObject _newPar, Collider[] _disChild, float wait=0.6f, bool _isCame=false)
     {
         AudioManager.instance.Play(soundNameEffect);
-        yield return new WaitForSeconds(wait);
+        if(!_isCame)
+        {
+            yield return new WaitForSeconds(wait);
+        }
         _xrGrab.trackPosition = false;
         _xrGrab.trackPosition = false;
         _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
