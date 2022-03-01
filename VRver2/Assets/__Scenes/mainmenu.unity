@@ -11276,6 +11276,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1194260784}
     m_Modifications:
+    - target: {fileID: 3962191269983267305, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962191270168880268, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 3962191271016512601, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
       propertyPath: m_Name
       value: Main VR Rig
