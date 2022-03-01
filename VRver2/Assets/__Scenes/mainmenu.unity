@@ -4993,6 +4993,7 @@ GameObject:
   - component: {fileID: 964177746}
   - component: {fileID: 964177745}
   - component: {fileID: 964177748}
+  - component: {fileID: 964177749}
   m_Layer: 0
   m_Name: TutorialCanvas
   m_TagString: Untagged
@@ -5101,6 +5102,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!114 &964177749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964177743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5a96cb678e0ee4495fcdf96c4ac242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &965401637
 GameObject:
   m_ObjectHideFlags: 0
@@ -6085,7 +6098,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1183251630}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 964177749}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: GoToStringAndStopSound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Tutorial
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1183251630
 MonoBehaviour:
   m_ObjectHideFlags: 0
