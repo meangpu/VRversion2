@@ -112,6 +112,9 @@ public class ToolStatusManager : MonoBehaviour
             if(tagName == "CamTool")
             {   
                 statusCam = true;
+                CamToolGameObj.localPosition = CamPosTarget.position;
+                CamToolGameObj.localRotation = CamPosTarget.rotation;
+                  
                 StartCoroutine(doLockTools(camRb, camGrabScpt, camCol, camLockPos, camNewParent, camAllChildCol));
 
 
