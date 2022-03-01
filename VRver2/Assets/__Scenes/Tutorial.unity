@@ -5035,7 +5035,7 @@ GameObject:
   - component: {fileID: 926412342}
   - component: {fileID: 926412341}
   - component: {fileID: 926412340}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Teleportation Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6917,7 +6917,7 @@ GameObject:
   - component: {fileID: 1362230358}
   - component: {fileID: 1362230357}
   - component: {fileID: 1362230356}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8698,7 +8698,7 @@ GameObject:
   - component: {fileID: 1824002777}
   - component: {fileID: 1824002781}
   - component: {fileID: 1824002780}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: tryGrabSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8888,7 +8888,7 @@ GameObject:
   - component: {fileID: 1857588803}
   - component: {fileID: 1857588807}
   - component: {fileID: 1857588806}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: tryGrab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
