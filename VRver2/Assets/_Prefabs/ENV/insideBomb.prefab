@@ -54,103 +54,103 @@ MonoBehaviour:
   m_SelfCollisions: 0
   restLength_: 1.9161593
   elements:
-  - particle1: 0
-    particle2: 1
+  - particle1: 368
+    particle2: 369
     restLength: 0.094474055
     constraintForce: 0
     tearResistance: 1
-  - particle1: 1
-    particle2: 2
+  - particle1: 369
+    particle2: 370
     restLength: 0.094572276
     constraintForce: 0
     tearResistance: 1
-  - particle1: 2
-    particle2: 3
+  - particle1: 370
+    particle2: 371
     restLength: 0.09467594
     constraintForce: 0
     tearResistance: 1
-  - particle1: 3
-    particle2: 4
+  - particle1: 371
+    particle2: 372
     restLength: 0.09476615
     constraintForce: 0
     tearResistance: 1
-  - particle1: 4
-    particle2: 5
+  - particle1: 372
+    particle2: 373
     restLength: 0.094700046
     constraintForce: 0
     tearResistance: 1
-  - particle1: 5
-    particle2: 6
+  - particle1: 373
+    particle2: 374
     restLength: 0.09461479
     constraintForce: 0
     tearResistance: 1
-  - particle1: 6
-    particle2: 7
+  - particle1: 374
+    particle2: 375
     restLength: 0.09463378
     constraintForce: 0
     tearResistance: 1
-  - particle1: 7
-    particle2: 8
+  - particle1: 375
+    particle2: 376
     restLength: 0.09467339
     constraintForce: 0
     tearResistance: 1
-  - particle1: 8
-    particle2: 9
+  - particle1: 376
+    particle2: 377
     restLength: 0.09489891
     constraintForce: 0
     tearResistance: 1
-  - particle1: 9
-    particle2: 10
+  - particle1: 377
+    particle2: 378
     restLength: 0.09684706
     constraintForce: 0
     tearResistance: 1
-  - particle1: 10
-    particle2: 11
+  - particle1: 378
+    particle2: 379
     restLength: 0.0967046
     constraintForce: 0
     tearResistance: 1
-  - particle1: 11
-    particle2: 12
+  - particle1: 379
+    particle2: 380
     restLength: 0.09684914
     constraintForce: 0
     tearResistance: 1
-  - particle1: 12
-    particle2: 13
+  - particle1: 380
+    particle2: 381
     restLength: 0.0966836
     constraintForce: 0
     tearResistance: 1
-  - particle1: 13
-    particle2: 14
+  - particle1: 381
+    particle2: 382
     restLength: 0.09691518
     constraintForce: 0
     tearResistance: 1
-  - particle1: 14
-    particle2: 15
+  - particle1: 382
+    particle2: 383
     restLength: 0.09669172
     constraintForce: 0
     tearResistance: 1
-  - particle1: 15
-    particle2: 16
+  - particle1: 383
+    particle2: 384
     restLength: 0.09676348
     constraintForce: 0
     tearResistance: 1
-  - particle1: 16
-    particle2: 17
+  - particle1: 384
+    particle2: 385
     restLength: 0.096895374
     constraintForce: 0
     tearResistance: 1
-  - particle1: 17
-    particle2: 18
+  - particle1: 385
+    particle2: 386
     restLength: 0.09670926
     constraintForce: 0
     tearResistance: 1
-  - particle1: 18
-    particle2: 19
+  - particle1: 386
+    particle2: 387
     restLength: 0.09704171
     constraintForce: 0
     tearResistance: 1
-  - particle1: 19
-    particle2: 20
+  - particle1: 387
+    particle2: 388
     restLength: 0.09604899
     constraintForce: 0
     tearResistance: 1
@@ -340,113 +340,113 @@ MonoBehaviour:
   m_SelfCollisions: 0
   restLength_: 1.9571564
   elements:
-  - particle1: 121
-    particle2: 122
+  - particle1: 245
+    particle2: 246
     restLength: 0.09148873
     constraintForce: 0
     tearResistance: 1
-  - particle1: 122
-    particle2: 123
+  - particle1: 246
+    particle2: 247
     restLength: 0.09162322
     constraintForce: 0
     tearResistance: 1
-  - particle1: 123
-    particle2: 124
+  - particle1: 247
+    particle2: 248
     restLength: 0.091898054
     constraintForce: 0
     tearResistance: 1
-  - particle1: 124
-    particle2: 125
+  - particle1: 248
+    particle2: 249
     restLength: 0.09191105
     constraintForce: 0
     tearResistance: 1
-  - particle1: 125
-    particle2: 126
+  - particle1: 249
+    particle2: 250
     restLength: 0.09191714
     constraintForce: 0
     tearResistance: 1
-  - particle1: 126
-    particle2: 127
+  - particle1: 250
+    particle2: 251
     restLength: 0.09166491
     constraintForce: 0
     tearResistance: 1
-  - particle1: 127
-    particle2: 128
+  - particle1: 251
+    particle2: 252
     restLength: 0.09175354
     constraintForce: 0
     tearResistance: 1
-  - particle1: 128
-    particle2: 129
+  - particle1: 252
+    particle2: 253
     restLength: 0.09225426
     constraintForce: 0
     tearResistance: 1
-  - particle1: 129
-    particle2: 130
+  - particle1: 253
+    particle2: 254
     restLength: 0.08664758
     constraintForce: 0
     tearResistance: 1
-  - particle1: 130
-    particle2: 131
+  - particle1: 254
+    particle2: 255
     restLength: 0.08659436
     constraintForce: 0
     tearResistance: 1
-  - particle1: 131
-    particle2: 132
+  - particle1: 255
+    particle2: 256
     restLength: 0.0867107
     constraintForce: 0
     tearResistance: 1
-  - particle1: 132
-    particle2: 133
+  - particle1: 256
+    particle2: 257
     restLength: 0.08671379
     constraintForce: 0
     tearResistance: 1
-  - particle1: 133
-    particle2: 134
+  - particle1: 257
+    particle2: 258
     restLength: 0.08660255
     constraintForce: 0
     tearResistance: 1
-  - particle1: 134
-    particle2: 135
+  - particle1: 258
+    particle2: 259
     restLength: 0.08647358
     constraintForce: 0
     tearResistance: 1
-  - particle1: 135
-    particle2: 136
+  - particle1: 259
+    particle2: 260
     restLength: 0.08795624
     constraintForce: 0
     tearResistance: 1
-  - particle1: 136
-    particle2: 137
+  - particle1: 260
+    particle2: 261
     restLength: 0.08791838
     constraintForce: 0
     tearResistance: 1
-  - particle1: 137
-    particle2: 138
+  - particle1: 261
+    particle2: 262
     restLength: 0.08787756
     constraintForce: 0
     tearResistance: 1
-  - particle1: 138
-    particle2: 139
+  - particle1: 262
+    particle2: 263
     restLength: 0.0877922
     constraintForce: 0
     tearResistance: 1
-  - particle1: 139
-    particle2: 140
+  - particle1: 263
+    particle2: 264
     restLength: 0.08807612
     constraintForce: 0
     tearResistance: 1
-  - particle1: 140
-    particle2: 141
+  - particle1: 264
+    particle2: 265
     restLength: 0.08777922
     constraintForce: 0
     tearResistance: 1
-  - particle1: 141
-    particle2: 142
+  - particle1: 265
+    particle2: 266
     restLength: 0.0880065
     constraintForce: 0
     tearResistance: 1
-  - particle1: 142
-    particle2: 143
+  - particle1: 266
+    particle2: 267
     restLength: 0.087497
     constraintForce: 0
     tearResistance: 1
@@ -813,113 +813,113 @@ MonoBehaviour:
   m_SelfCollisions: 0
   restLength_: 2.0713496
   elements:
-  - particle1: 244
-    particle2: 245
+  - particle1: 122
+    particle2: 123
     restLength: 0.09481991
     constraintForce: 0
     tearResistance: 1
-  - particle1: 245
-    particle2: 246
+  - particle1: 123
+    particle2: 124
     restLength: 0.09535264
     constraintForce: 0
     tearResistance: 1
-  - particle1: 246
-    particle2: 247
+  - particle1: 124
+    particle2: 125
     restLength: 0.0956469
     constraintForce: 0
     tearResistance: 1
-  - particle1: 247
-    particle2: 248
+  - particle1: 125
+    particle2: 126
     restLength: 0.09569859
     constraintForce: 0
     tearResistance: 1
-  - particle1: 248
-    particle2: 249
+  - particle1: 126
+    particle2: 127
     restLength: 0.095667884
     constraintForce: 0
     tearResistance: 1
-  - particle1: 249
-    particle2: 250
+  - particle1: 127
+    particle2: 128
     restLength: 0.095635876
     constraintForce: 0
     tearResistance: 1
-  - particle1: 250
-    particle2: 251
+  - particle1: 128
+    particle2: 129
     restLength: 0.09558253
     constraintForce: 0
     tearResistance: 1
-  - particle1: 251
-    particle2: 252
+  - particle1: 129
+    particle2: 130
     restLength: 0.09550361
     constraintForce: 0
     tearResistance: 1
-  - particle1: 252
-    particle2: 253
+  - particle1: 130
+    particle2: 131
     restLength: 0.09545488
     constraintForce: 0
     tearResistance: 1
-  - particle1: 253
-    particle2: 254
+  - particle1: 131
+    particle2: 132
     restLength: 0.09564129
     constraintForce: 0
     tearResistance: 1
-  - particle1: 254
-    particle2: 255
+  - particle1: 132
+    particle2: 133
     restLength: 0.09312569
     constraintForce: 0
     tearResistance: 1
-  - particle1: 255
-    particle2: 256
+  - particle1: 133
+    particle2: 134
     restLength: 0.09304072
     constraintForce: 0
     tearResistance: 1
-  - particle1: 256
-    particle2: 257
+  - particle1: 134
+    particle2: 135
     restLength: 0.0930812
     constraintForce: 0
     tearResistance: 1
-  - particle1: 257
-    particle2: 258
+  - particle1: 135
+    particle2: 136
     restLength: 0.09312179
     constraintForce: 0
     tearResistance: 1
-  - particle1: 258
-    particle2: 259
+  - particle1: 136
+    particle2: 137
     restLength: 0.093062244
     constraintForce: 0
     tearResistance: 1
-  - particle1: 259
-    particle2: 260
+  - particle1: 137
+    particle2: 138
     restLength: 0.093230285
     constraintForce: 0
     tearResistance: 1
-  - particle1: 260
-    particle2: 261
+  - particle1: 138
+    particle2: 139
     restLength: 0.09300132
     constraintForce: 0
     tearResistance: 1
-  - particle1: 261
-    particle2: 262
+  - particle1: 139
+    particle2: 140
     restLength: 0.09331879
     constraintForce: 0
     tearResistance: 1
-  - particle1: 262
-    particle2: 263
+  - particle1: 140
+    particle2: 141
     restLength: 0.09321168
     constraintForce: 0
     tearResistance: 1
-  - particle1: 263
-    particle2: 264
+  - particle1: 141
+    particle2: 142
     restLength: 0.09314567
     constraintForce: 0
     tearResistance: 1
-  - particle1: 264
-    particle2: 265
+  - particle1: 142
+    particle2: 143
     restLength: 0.093250155
     constraintForce: 0
     tearResistance: 1
-  - particle1: 265
-    particle2: 266
+  - particle1: 143
+    particle2: 144
     restLength: 0.09175564
     constraintForce: 0
     tearResistance: 1
@@ -1109,108 +1109,108 @@ MonoBehaviour:
   m_SelfCollisions: 0
   restLength_: 2.0578299
   elements:
-  - particle1: 367
-    particle2: 368
+  - particle1: 0
+    particle2: 1
     restLength: 0.09827521
     constraintForce: 0
     tearResistance: 1
-  - particle1: 368
-    particle2: 369
+  - particle1: 1
+    particle2: 2
     restLength: 0.09829653
     constraintForce: 0
     tearResistance: 1
-  - particle1: 369
-    particle2: 370
+  - particle1: 2
+    particle2: 3
     restLength: 0.09829169
     constraintForce: 0
     tearResistance: 1
-  - particle1: 370
-    particle2: 371
+  - particle1: 3
+    particle2: 4
     restLength: 0.09825621
     constraintForce: 0
     tearResistance: 1
-  - particle1: 371
-    particle2: 372
+  - particle1: 4
+    particle2: 5
     restLength: 0.09836728
     constraintForce: 0
     tearResistance: 1
-  - particle1: 372
-    particle2: 373
+  - particle1: 5
+    particle2: 6
     restLength: 0.09839678
     constraintForce: 0
     tearResistance: 1
-  - particle1: 373
-    particle2: 374
+  - particle1: 6
+    particle2: 7
     restLength: 0.098312445
     constraintForce: 0
     tearResistance: 1
-  - particle1: 374
-    particle2: 375
+  - particle1: 7
+    particle2: 8
     restLength: 0.09835026
     constraintForce: 0
     tearResistance: 1
-  - particle1: 375
-    particle2: 376
+  - particle1: 8
+    particle2: 9
     restLength: 0.0987152
     constraintForce: 0
     tearResistance: 1
-  - particle1: 376
-    particle2: 377
+  - particle1: 9
+    particle2: 10
     restLength: 0.09820564
     constraintForce: 0
     tearResistance: 1
-  - particle1: 377
-    particle2: 378
+  - particle1: 10
+    particle2: 11
     restLength: 0.09805482
     constraintForce: 0
     tearResistance: 1
-  - particle1: 378
-    particle2: 379
+  - particle1: 11
+    particle2: 12
     restLength: 0.097586565
     constraintForce: 0
     tearResistance: 1
-  - particle1: 379
-    particle2: 380
+  - particle1: 12
+    particle2: 13
     restLength: 0.09752506
     constraintForce: 0
     tearResistance: 1
-  - particle1: 380
-    particle2: 381
+  - particle1: 13
+    particle2: 14
     restLength: 0.09780369
     constraintForce: 0
     tearResistance: 1
-  - particle1: 381
-    particle2: 382
+  - particle1: 14
+    particle2: 15
     restLength: 0.09776373
     constraintForce: 0
     tearResistance: 1
-  - particle1: 382
-    particle2: 383
+  - particle1: 15
+    particle2: 16
     restLength: 0.09783016
     constraintForce: 0
     tearResistance: 1
-  - particle1: 383
-    particle2: 384
+  - particle1: 16
+    particle2: 17
     restLength: 0.09802393
     constraintForce: 0
     tearResistance: 1
-  - particle1: 384
-    particle2: 385
+  - particle1: 17
+    particle2: 18
     restLength: 0.09795022
     constraintForce: 0
     tearResistance: 1
-  - particle1: 385
-    particle2: 386
+  - particle1: 18
+    particle2: 19
     restLength: 0.09794204
     constraintForce: 0
     tearResistance: 1
-  - particle1: 386
-    particle2: 387
+  - particle1: 19
+    particle2: 20
     restLength: 0.098242
     constraintForce: 0
     tearResistance: 1
-  - particle1: 387
-    particle2: 388
+  - particle1: 20
+    particle2: 21
     restLength: 0.09564065
     constraintForce: 0
     tearResistance: 1
