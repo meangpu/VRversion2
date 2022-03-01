@@ -23,7 +23,7 @@ public class AudioPlayer : MonoBehaviour
         }
         else
         {
-            AudioManager.instance.Play("mainBG");
+            AudioManager.instance.Play(playName);
             AudioManager.instance.mainThemeIsplaying = true;
         }
     }
