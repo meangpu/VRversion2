@@ -9,6 +9,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ToolStatusManager : MonoBehaviour
 {
     [Header("Setting")]
+    [SerializeField] string soundNameEffect;
     [SerializeField] Color greenCol;
     [SerializeField] Color RedCol;
     [SerializeField] string readyWord;
@@ -140,6 +141,7 @@ public class ToolStatusManager : MonoBehaviour
 
     public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, GameObject _newPar, Collider[] _disChild, float wait=0.6f)
     {
+        AudioManager.instance.Play(soundNameEffect);
         yield return new WaitForSeconds(wait);
         _xrGrab.trackPosition = false;
         _xrGrab.trackPosition = false;
