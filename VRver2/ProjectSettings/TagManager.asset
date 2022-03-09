@@ -12,6 +12,7 @@ TagManager:
   - Fuse
   - RespawnFloor
   - CorrectWire
+  - DirectLight
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Fuse
   - CamInTool
   - Rope
-  - 
+  - GrabIgnorRay
   - 
   - 
   - 

@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TeleportController teleScpt;
     [SerializeField] ContinuousMovement ConScpt;
     [SerializeField] SnapTurnProviderBase snapTurnScpt;
+    [SerializeField] ToolStatusManager toolManagerScpt;
 
 
 
@@ -81,6 +82,7 @@ public class GameManager : MonoBehaviour
         AudioManager.instance.StopAllSound();
         AudioManager.instance.Play("level1");
         LockPlayer();
+        unlockTools();
     }
 
     public void DoWingame(int score)
@@ -105,6 +107,11 @@ public class GameManager : MonoBehaviour
         teleScpt.enabled = false;
         ConScpt.enabled = false;
         snapTurnScpt.enabled = false;
+    }
+
+    public void unlockTools()
+    {
+        toolManagerScpt.doUnlockAllToolsAfterStart();
     }
 
 }

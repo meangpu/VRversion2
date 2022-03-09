@@ -148,7 +148,14 @@ public class ToolStatusManager : MonoBehaviour
         _xrGrab.trackPosition = false;
         
         // _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
-        _rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+
+
+        // _rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+
+        _rb.constraints = RigidbodyConstraints.FreezeAll;
+
+        /// เปลี่ยนตรงนี้เป็น lock ให้หมด 
+        // ค่อยปลดหลัง start
 
 
         // ปิด collider เก่า 
@@ -165,6 +172,21 @@ public class ToolStatusManager : MonoBehaviour
         // เปิดตัวแม่ใหม่ 
         _newPar.SetActive(true);
 
+    }
+
+
+    public void doUnlockAllToolsAfterStart()
+    {
+
+        unlockTool(leftRb);
+        unlockTool(rightRb);
+        unlockTool(camRb);
+
+    }
+
+    public void unlockTool(Rigidbody _rb)
+    {
+        _rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
     }
 
 }

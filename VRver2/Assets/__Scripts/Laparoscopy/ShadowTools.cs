@@ -147,10 +147,6 @@ public class ShadowTools : MonoBehaviour
             );
 
 
-
-
-
-
         // childCam.eulerAngles = targetCamAngle;
 
         foreach (Transform cLeft in childLeft)
