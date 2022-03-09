@@ -146,7 +146,11 @@ public class ToolStatusManager : MonoBehaviour
         yield return new WaitForSeconds(wait);
         _xrGrab.trackPosition = false;
         _xrGrab.trackPosition = false;
-        _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+        
+        // _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+        _rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+
+
         // ปิด collider เก่า 
         _col.isTrigger = true; 
 

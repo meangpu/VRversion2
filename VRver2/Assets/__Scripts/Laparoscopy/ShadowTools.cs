@@ -156,14 +156,14 @@ public class ShadowTools : MonoBehaviour
         foreach (Transform cLeft in childLeft)
         {
             cLeft.rotation = Quaternion.Euler(targetLeftAngle);
-            // cLeft.position = targetLeftPos;
+            cLeft.position = targetLeftPos;
         }
 
         foreach (Transform cRight in childRight)
         {
 
             cRight.rotation = Quaternion.Euler(targetRightAngle);
-            // cRight.position = targetRightPos;
+            cRight.position = targetRightPos;
 
         }
     }

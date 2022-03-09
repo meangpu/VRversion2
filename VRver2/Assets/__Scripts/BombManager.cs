@@ -26,7 +26,9 @@ public class BombManager : MonoBehaviour
         foreach (Rigidbody _r in _rb)
         {
             _r.isKinematic = true;
-            _r.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+            // _r.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+
+            _r.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
             
             
         }
