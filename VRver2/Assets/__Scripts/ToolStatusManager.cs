@@ -140,7 +140,7 @@ public class ToolStatusManager : MonoBehaviour
     }
 
 
-    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, GameObject _newPar, Collider[] _disChild, float wait=0.6f)
+    public IEnumerator doLockTools(Rigidbody _rb, XRGrabInteractable _xrGrab, Collider _col, Vector3 _fixPos, GameObject _newPar, Collider[] _disChild, float wait=0.2f)
     {
         AudioManager.instance.Play(soundNameEffect);
         yield return new WaitForSeconds(wait);
@@ -186,7 +186,7 @@ public class ToolStatusManager : MonoBehaviour
 
     public void unlockTool(Rigidbody _rb)
     {
-        _rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+        _rb.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
     }
 
 }
