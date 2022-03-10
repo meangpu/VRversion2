@@ -14,7 +14,6 @@ public class toolResetPosition : MonoBehaviour
 
     public void resetPosAndRot()
     {
-        Debug.Log("qq");
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         transform.position = position;
