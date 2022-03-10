@@ -16420,6 +16420,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -16448,6 +16452,10 @@ PrefabInstance:
       value: playCutAnim
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 419393988}
@@ -16460,11 +16468,23 @@ PrefabInstance:
       value: playholdAnim
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 419393988}
+    - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetPosAndRot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: resetPosAndRot
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
@@ -16480,6 +16500,10 @@ PrefabInstance:
       value: toolResetPosition, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: toolResetPosition, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -16489,6 +16513,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8327109346713060966, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
@@ -16574,6 +16602,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -16602,6 +16634,10 @@ PrefabInstance:
       value: playCutAnim
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 402592418}
@@ -16614,11 +16650,23 @@ PrefabInstance:
       value: playholdAnim
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 402592418}
+    - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: resetPosAndRot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: resetPosAndRot
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
@@ -16634,6 +16682,10 @@ PrefabInstance:
       value: toolResetPosition, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: toolResetPosition, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -16643,6 +16695,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
+      propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8574088089203998296, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
