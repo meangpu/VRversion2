@@ -16417,11 +16417,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5381514567078196864, guid: b2aa8a8048449c444b5ae89905be8107, type: 3}
       propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -16599,11 +16599,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnSelectExited.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnSelectCanceled.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5754589426068655806, guid: 2d7ee430725bc554e885afec8ff383c2, type: 3}
       propertyPath: m_OnActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
