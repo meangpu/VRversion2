@@ -49,9 +49,6 @@ public class BombGlowAndSound : MonoBehaviour
                 isRed = false;
                 meshRender.material = redGlow;
             }
-
-
-
         }
     }
 
