@@ -18146,6 +18146,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3962191269307722307, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3962191269307722311, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
       propertyPath: m_Radius
       value: 0.3
@@ -18169,6 +18173,10 @@ PrefabInstance:
     - target: {fileID: 3962191270110094043, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0.084905684
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962191270751306408, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3962191270751306412, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
       propertyPath: m_Radius
@@ -18393,6 +18401,14 @@ PrefabInstance:
     - target: {fileID: 4764292069431324680, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToStringAndStopSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 8223379933900033068, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8472901784186391473, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8533783005054056741, guid: 9aa199113cc61c842a7dc777a805e51c, type: 3}
       propertyPath: m_AnchorMax.y
