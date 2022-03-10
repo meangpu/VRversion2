@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 3962191269307722309}
   - component: {fileID: 3962191269307722310}
   - component: {fileID: 3962191269307722311}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3962191269837311092
 GameObject:
@@ -2490,7 +2490,7 @@ GameObject:
   - component: {fileID: 3962191270751306410}
   - component: {fileID: 3962191270751306411}
   - component: {fileID: 3962191270751306412}
-  m_Layer: 8
+  m_Layer: 16
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2655,7 +2655,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3962191271016512601
 GameObject:
@@ -4257,7 +4257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4964048213230895740, guid: 756fb8e6e27ed9e4fa7c208e23804046, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756fb8e6e27ed9e4fa7c208e23804046, type: 3}
@@ -4363,7 +4363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4857498059376550874, guid: 1e9b4ff1cd25d0c4db8366fba4eb4a84, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4857498059376550875, guid: 1e9b4ff1cd25d0c4db8366fba4eb4a84, type: 3}
       propertyPath: m_RootOrder

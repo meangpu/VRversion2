@@ -275,7 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7562411195413980367}
   m_Layer: 12
-  m_Name: Fuse
+  m_Name: FuseParent
   m_TagString: Fuse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
