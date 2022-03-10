@@ -7,6 +7,7 @@ public class toolResetPosition : MonoBehaviour
 
     public void resetPosAndRot()
     {
+        Debug.Log("weee");
         transform.position = position;
         transform.rotation = Quaternion.Euler(rotation);
     }
