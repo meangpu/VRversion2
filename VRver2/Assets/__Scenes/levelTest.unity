@@ -10419,8 +10419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   c1Tran: {fileID: 457406358}
   c2Tran: {fileID: 625583891}
-  offset1: {x: 0, y: 0, z: 1}
-  offset2: {x: 0, y: 0, z: 2}
+  offset1: {x: 0, y: 0, z: -0.5}
+  offset2: {x: 0, y: 0, z: -1}
 --- !u!4 &1269798073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2441051082066846034, guid: 8a62b845f6cdcc24981bb8fcce0255cc, type: 3}
