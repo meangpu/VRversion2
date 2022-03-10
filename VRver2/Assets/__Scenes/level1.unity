@@ -2779,7 +2779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987bd825e9ab95a429aac2c3c5512cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 4.64131, y: 0.651195, z: 1.12364}
+  position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 15.000006, z: 315}
 --- !u!1001 &406976856
 PrefabInstance:
@@ -3174,7 +3174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987bd825e9ab95a429aac2c3c5512cdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 4.6413097, y: 0.64879507, z: 0.76676}
+  position: {x: 0, y: 0, z: 0}
   rotation: {x: 0.0000017075473, y: 345, z: 315}
 --- !u!1 &434352601
 GameObject:
