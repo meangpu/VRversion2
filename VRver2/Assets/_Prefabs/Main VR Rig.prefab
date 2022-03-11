@@ -3600,6 +3600,10 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 47867da0c59f62b47b45b958db1e8316, type: 2}
   masterVolText: {fileID: 4178960159521293752}
   masterVolSlider: {fileID: 4178960158922150942}
+  sfxVolText: {fileID: 0}
+  sfxVolSlider: {fileID: 0}
+  musicVolText: {fileID: 0}
+  musicVolSlider: {fileID: 0}
 --- !u!1 &8923481478107845710
 GameObject:
   m_ObjectHideFlags: 0

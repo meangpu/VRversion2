@@ -21,10 +21,47 @@ public class MorseManager : MonoBehaviour
     [SerializeField] string mainMorseWord;
     private IEnumerator coroutine;
 
+   private void Awake() 
+    {
+        GameManager.OnGameStateChange += HandleGameManagerChangeState;
+    }
+
+    private void OnDestroy() 
+    {
+        GameManager.OnGameStateChange -= HandleGameManagerChangeState;
+    }
+
+
+    void HandleGameManagerChangeState(GameState state)
+    {
+        if (state != GameState.Playing && state != GameState.Wingame && state != GameState.Losegame)
+        {
+            return;
+        }
+        else
+        {
+            if(state == GameState.Playing)
+            {
+                StartCoroutine(coroutine);
+            }
+
+            else if(state == GameState.Wingame)
+            {
+                StartCoroutine(coroutine);
+            }
+
+            else if(state == GameState.Losegame)
+            {
+                StartCoroutine(coroutine);
+            }
+        }
+    }
+
+
     private void Start() 
     {
         coroutine = doStartMorse();
-        StartCoroutine(coroutine);
+        // StartCoroutine(coroutine);
     }
 
     public IEnumerator doStartMorse()

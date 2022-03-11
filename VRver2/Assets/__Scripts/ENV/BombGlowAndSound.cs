@@ -11,6 +11,7 @@ public class BombGlowAndSound : MonoBehaviour
     [SerializeField] Material greenGlow;
     [SerializeField] AudioSource beepSound;
     [SerializeField] bool isRed;
+    [SerializeField] bool playSound = true;
     private IEnumerator coroutine;
 
    private void Awake() 
@@ -68,7 +69,10 @@ public class BombGlowAndSound : MonoBehaviour
         }
         while (isRed)
         {
-            beepSound.Play();
+            if(playSound)
+            {
+                beepSound.Play();
+            }
             meshRender.material = redGlow;
             yield return new WaitForSeconds(0.6f);
             meshRender.material = whiteGlow;
